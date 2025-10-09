@@ -51,7 +51,7 @@
 }
 
 /* ========================================
-   🔄 RESET MODERNE
+  RESET MODERNE
    ======================================== */
 *,
 *::before,
@@ -106,7 +106,7 @@ a {
 }
 
 /* ========================================
-   🍔 MENU HAMBURGER
+  MENU HAMBURGER
    ======================================== */
 .hamburger {
   position: fixed;
@@ -151,7 +151,7 @@ a {
 }
 
 /* ========================================
-   📱 SIDEBAR
+  SIDEBAR
    ======================================== */
 .sidebar {
   position: fixed;
@@ -241,7 +241,7 @@ a {
 }
 
 /* ========================================
-   📄 LAYOUT PRINCIPAL
+  LAYOUT PRINCIPAL
    ======================================== */
 .main-content {
   margin-left: 0;
@@ -263,7 +263,7 @@ a {
 }
 
 /* ========================================
-   🏠 ACCUEIL
+  ACCUEIL
    ======================================== */
 #home {
   text-align: center;
@@ -351,7 +351,7 @@ a {
 }
 
 /* ========================================
-   💼 PROJETS
+  PROJETS
    ======================================== */
 #projects > p {
   color: var(--text-secondary);
@@ -484,7 +484,7 @@ a {
 }
 
 /* ========================================
-   🧰 COMPÉTENCES
+  COMPÉTENCES
    ======================================== */
 .skills-grid {
   display: grid;
@@ -560,7 +560,25 @@ a {
 }
 
 /* ========================================
-   📱 RESPONSIVE
+  CONTACT
+   ======================================== */
+
+#contact button {
+  background: var(--bg-card);
+  color: var(--text-primary);
+  border: none;
+  padding: var(--space-sm) var(--space-md);
+  margin: auto;
+  border-radius: var(--radius-md);
+  width: 15%;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background var(--transition-fast);
+}
+
+/* ========================================
+  RESPONSIVE
    ======================================== */
 @media (min-width: 768px) {
   .main-content {
@@ -605,7 +623,7 @@ a {
 }
 
 /* ========================================
-   ✨ ANIMATIONS & DIVERS
+  ANIMATIONS & DIVERS
    ======================================== */
 
 ::-webkit-scrollbar {
