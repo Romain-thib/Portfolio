@@ -498,7 +498,7 @@ a {
 .skills-category h3 {
   color: var(--text-secondary);
   margin-bottom: var(--space-lg);
-  font-size: 2rem;
+  font-size: clamp(1.125rem, 3vw, 1.5rem);
   font-weight: 600;
 }
 
