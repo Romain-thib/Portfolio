@@ -330,7 +330,7 @@ a {
 #contact h2 {
   font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 700;
-  margin-bottom: var(--space-md);
+  margin-bottom: var(--space-xl);
   color: var(--text-primary);
   position: relative;
   display: inline-block;
