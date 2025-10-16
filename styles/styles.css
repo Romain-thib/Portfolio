@@ -1,8 +1,6 @@
 /* Import des polices Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Quicksand:wght@300..700&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
-
 :root {
   /* Couleurs principales */
   --primary: #6366f1;
@@ -11,7 +9,8 @@
 
   /* Couleurs de fond */
   --bg-main: #0f172a;
-  --bg-card: linear-gradient(160deg, #0f172a, #1e293b, #273c75);
+  --bg-card: #1e293b;
+  --bg-card-gradient: linear-gradient(160deg, #0f172a, #1e293b, #273c75);
   --bg-card-hover: #334155;
 
   /* Couleurs de texte */
@@ -21,10 +20,8 @@
 
   /* Accents */
   --accent: #10b981;
-  --accent-warm: #f59e0b;
 
   /* Espacement */
-  --space-xs: 0.5rem;
   --space-sm: 1rem;
   --space-md: 1.5rem;
   --space-lg: 2rem;
@@ -38,7 +35,6 @@
   --radius-full: 9999px;
 
   /* Ombres */
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
   --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.2);
   --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.3);
   --shadow-glow: 0 0 20px rgba(99, 102, 241, 0.3);
@@ -62,8 +58,8 @@
 *,
 *::before,
 *::after {
-  margin: 0; /*Supprime les marges par défaut de tous les éléments.*/
-  padding: 0; /*Supprime les espacements internes par défaut.*/
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -239,7 +235,6 @@ a {
 .sidebar a:hover {
   background: var(--bg-card-hover);
   color: var(--primary-light);
-  padding-left: var(--space-lg);
 }
 
 .sidebar a:hover::before {
@@ -400,7 +395,7 @@ a {
 }
 
 .project-item {
-  background: var(--bg-card);
+  background: var(--bg-card-gradient);
   border-radius: var(--radius-lg);
   overflow: hidden;
   cursor: pointer;
@@ -474,7 +469,7 @@ a {
   max-height: 0;
   overflow: hidden;
   padding: 0 var(--space-md);
-  background: var(--bg-card);
+  background: var(--bg-card-gradient);
   color: var(--text-secondary);
   transition: all var(--transition-base);
   border-top: 1px solid transparent;
@@ -482,7 +477,6 @@ a {
 
 .project-details.show {
   max-height: 500px;
-  padding: var(--space-md);
   border-top-color: rgba(99, 102, 241, 0.2);
 }
 
@@ -525,7 +519,7 @@ a {
 }
 
 .skill-item {
-  background: var(--bg-card);
+  background: var(--bg-card-gradient);
   border: 2px solid rgba(99, 102, 241, 0.1);
   border-radius: var(--radius-lg);
   padding: var(--space-lg);
@@ -663,11 +657,6 @@ a {
   #contact img {
     width: 60px;
     margin-bottom: 0.5rem;
-  }
-
-  #contact button {
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
   }
 }
 
