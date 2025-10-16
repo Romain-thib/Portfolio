@@ -1,3 +1,8 @@
+/* Import des polices Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Quicksand:wght@300..700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
 :root {
   /* Couleurs principales */
   --primary: #6366f1;
@@ -50,11 +55,6 @@
 
   color-scheme: dark;
 }
-
-/* Import des polices Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Quicksand:wght@300..700&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
 /* ========================================
   RESET MODERNE
