@@ -482,7 +482,7 @@ a {
 
 .project-details p {
   line-height: 1.7;
-  margin: 0;
+  margin: var(--space-md) 0;
 }
 
 /* ========================================
