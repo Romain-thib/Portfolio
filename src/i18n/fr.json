@@ -1,0 +1,19 @@
+{
+  "projects": {
+    "project1": {
+      "title": "Mon premier projet",
+      "description": "Une application moderne en Vue.js"
+    },
+    "project2": {
+      "title": "Gestionnaire de tâches",
+      "description": "Une application Laravel complète"
+    }
+  },
+  "ui": {
+    "home": "Accueil",
+    "projects": "Projets",
+    "theme_light": "Mode clair",
+    "theme_dark": "Mode sombre",
+    "footer_text": "Tous droits réservés"
+  }
+}
