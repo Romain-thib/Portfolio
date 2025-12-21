@@ -1,16 +1,20 @@
 {
   "projects": {
-    "portfolioVue": {
-      "title": "Portfolio Vue.js",
-      "description": "SPA moderne réalisée avec Vue 3 et Vite."
+    "bomberman": {
+      "title": "Bomberman",
+      "description": "Ce projet, développé en JavaFX, consistait à reproduire le célèbre jeu Bomberman selon un cahier des charges précis. Le programme intègre différentes fonctionnalités : gestion des collisions, inventaire des bombes, système de points de vie et interface dynamique.."
     },
     "artPourVivre": {
       "title": "Site Web Art pour Vivre",
       "description": "Ce site a été conçu en HTML et CSS dans le cadre d'un projet universitaire réalisé en équipe de trois. L'objectif était de développer un site vitrine pour une entreprise fictive du secteur événementiel. Nous avons imaginé \"Art pour Vivre\", une société spécialisée dans l'organisation d'expositions artistiques à travers la France."
     },
-    "todoApp": {
-      "title": "Application Todo",
-      "description": "Une application de gestion de tâches construite avec Vue 3, Vite, et utilisant le LocalStorage pour la persistance des données."
+    "l-o-rhone": {
+      "title": "Application L’Ô Rhône",
+      "description": "Réalisée en binôme, cette application JavaFX permet la gestion des données d’une station de traitement d’eau. Elle offre la possibilité de gérer les clients, leurs commandes et les informations associées. Ce projet m’a permis de renforcer mes compétences en conception d’interfaces et en structuration de données."
+    },
+    "lens-symphony-web": {
+      "title": "Site Web LensSymphony",
+      "description": "Réalisée en binôme, cette application JavaFX permet la gestion des données d’une station de traitement d’eau. Elle offre la possibilité de gérer les clients, leurs commandes et les informations associées. Ce projet m’a permis de renforcer mes compétences en conception d’interfaces et en structuration de données."
     }
   },
   "ui": {
@@ -20,5 +24,9 @@
     "theme_light": "Mode clair",
     "theme_dark": "Mode sombre",
     "footer_text": "Tous droits réservés"
+  },
+  "presentation": {
+    "title": "À propos de moi",
+    "description": "Je m'appelle Romain THIBAUT, 19 ans, étudiant en deuxième année de BUT Informatique à l'IUT de Lens. Je recherche actuellement un stage à partir du 13 avril, dans le domaine du développement web ou du développement d'applications."
   }
 }

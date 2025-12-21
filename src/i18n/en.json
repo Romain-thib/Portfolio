@@ -1,7 +1,7 @@
 {
   "projects": {
-    "portfolioVue": {
-      "title": "Vue.js Portfolio",
+    "bomberman": {
+      "title": "Bomberman",
       "description": "Modern SPA built with Vue 3 and Vite."
     },
     "artPourVivre": {
@@ -11,6 +11,10 @@
     "todoApp": {
       "title": "Todo Application",
       "description": "A task management application built with Vue 3, Vite, and using LocalStorage for data persistence."
+    },
+    "lens-symphony-web": {
+      "title": "Site Web LensSymphony",
+      "description": "Réalisée en binôme, cette application JavaFX permet la gestion des données d’une station de traitement d’eau. Elle offre la possibilité de gérer les clients, leurs commandes et les informations associées. Ce projet m’a permis de renforcer mes compétences en conception d’interfaces et en structuration de données."
     }
   },
   "ui": {
@@ -20,5 +24,9 @@
     "theme_light": "Light mode",
     "theme_dark": "Dark mode",
     "footer_text": "All rights reserved"
+  },
+  "presentation": {
+    "title": "About me",
+    "description": "My name is Romain THIBAUT, I am 19 years old and I am a second-year student studying Computer Science at the University Institute of Technology in Lens. I am currently looking for an internship starting on April 13 in the field of web development or application development."
   }
 }

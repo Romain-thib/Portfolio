@@ -25,7 +25,7 @@ defineProps({
     <img
       :src="project.image"
       :alt="t(project.titleKey)"
-      class="w-full h-40 object-cover rounded-lg"
+      class="w-full h-50 object-cover rounded-lg"
     />
 
     <p class="text-zinc-600 dark:text-slate-300 text-sm leading-relaxed">

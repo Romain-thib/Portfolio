@@ -1,10 +1,16 @@
-[
+[ {
+    "id": "lens-symphony-web",
+    "titleKey": "projects.lens-symphony-web.title",
+    "descriptionKey": "projects.lens-symphony-web.description",
+    "tech": ["PHP", "HTML", "LARAVEL", "TAILWIND CSS"],
+    "image": "/images/lens_symphony.png"
+  },
   {
-    "id": "portfolio-vue",
-    "titleKey": "projects.portfolioVue.title",
-    "descriptionKey": "projects.portfolioVue.description",
-    "tech": ["Vue 3", "Vite", "CSS"],
-    "image": "/images/portfolio.png"
+    "id": "bomberman",
+    "titleKey": "projects.bomberman.title",
+    "descriptionKey": "projects.bomberman.description",
+    "tech": ["JAVA", "JAVA FX"],
+    "image": "/images/projet_bomberman.png"
   },
   {
     "id": "art-pour-vivre",
@@ -14,10 +20,10 @@
     "image": "/images/site-art-pour-vivre.png"
   },
   {
-    "id": "todo-app",
-    "titleKey": "projects.todoApp.title",
-    "descriptionKey": "projects.todoApp.description",
-    "tech": ["Vue 3", "Vite", "CSS", "LocalStorage"],
-    "image": "/images/todo-app.png"
+    "id": "l-o-rhone",
+    "titleKey": "projects.l-o-rhone.title",
+    "descriptionKey": "projects.l-o-rhone.description",
+    "tech": ["Java", "JavaFx"],
+    "image": "/images/projet_eau_sae.png"
   }
 ]
