@@ -1,4 +1,8 @@
 <script setup>
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
+
 defineProps({
   project: {
     type: Object,
@@ -9,34 +13,35 @@ defineProps({
 
 <template>
   <div
-    class="bg-white rounded-xl shadow-md p- hover:shadow-lg transition-shadow duration-300 flex flex-col gap-10"
-  >
-    <h3 class="text-xl font-semibold text-gray-800 text-center">
-      {{ project.title }}
+  class="bg-stone-50 dark:bg-slate-800
+         border border-stone-200 dark:border-slate-700
+         rounded-xl shadow-sm hover:shadow-lg
+         p-6 flex flex-col gap-4 transition-shadow"
+>
+    <h3 class="text-xl font-semibold text-zinc-800 dark:text-slate-100 text-center">
+      {{ t(project.titleKey) }}
     </h3>
 
     <img
       :src="project.image"
-      :alt="project.title"
+      :alt="t(project.titleKey)"
+      class="w-full h-40 object-cover rounded-lg"
     />
 
-    <p class="text-gray-600 text-sm leading-relaxed">
-      {{ project.description }}
+    <p class="text-zinc-600 dark:text-slate-300 text-sm leading-relaxed">
+      {{ t(project.descriptionKey) }}
     </p>
 
-    <ul class="flex flex-wrap gap-2 mt-2">
+    <ul class="flex flex-wrap gap-2 mt-auto">
       <li
-        v-for="t in project.tech"
-        :key="t"
-        class="bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full border border-gray-200"
+        v-for="tech in project.tech"
+        :key="tech"
+        class="bg-stone-100 dark:bg-slate-700
+         text-zinc-700 dark:text-slate-200
+         text-xs px-3 py-1 rounded-full"
       >
-        {{ t }}
+        {{ tech }}
       </li>
     </ul>
   </div>
 </template>
-
-
-<style scoped>
-
-</style>
