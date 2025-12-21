@@ -7,7 +7,7 @@ import ProjectCard from '../components/ProjectCard.vue'
   <section class="py-10">
     <h2 class="text-3xl font-bold mb-6 text-center">Tous mes projets</h2>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
       <ProjectCard
         v-for="p in projects"
         :key="p.title"

@@ -1,17 +1,24 @@
 {
   "projects": {
-    "project1": {
-      "title": "My first project",
-      "description": "A modern Vue.js application"
+    "portfolioVue": {
+      "title": "Vue.js Portfolio",
+      "description": "Modern SPA built with Vue 3 and Vite."
     },
-    "project2": {
-      "title": "Task manager",
-      "description": "A complete Laravel application"
+    "artPourVivre": {
+      "title": "Art pour Vivre Website",
+      "description": "This website was designed in HTML and CSS as part of a university project carried out in a team of three. The goal was to develop a showcase site for a fictional company in the events sector. We created \"Art pour Vivre\", a company specializing in organizing art exhibitions across France."
+    },
+    "todoApp": {
+      "title": "Todo Application",
+      "description": "A task management application built with Vue 3, Vite, and using LocalStorage for data persistence."
     }
   },
-  "ui": { "home": "Home",
-  "projects": "Projects",
-  "theme_light": "Light mode",
-  "theme_dark": "Dark mode",
-  "footer_text": "All rights reserved" }
+  "ui": {
+    "home": "Home",
+    "projects": "Projects",
+    "button_view_projects": "View projects",
+    "theme_light": "Light mode",
+    "theme_dark": "Dark mode",
+    "footer_text": "All rights reserved"
+  }
 }

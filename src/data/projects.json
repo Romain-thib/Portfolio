@@ -1,26 +1,23 @@
 [
   {
-    "title": "Portfolio Vue.js",
-    "description": "SPA moderne réalisée avec Vue 3 et Vite.",
+    "id": "portfolio-vue",
+    "titleKey": "projects.portfolioVue.title",
+    "descriptionKey": "projects.portfolioVue.description",
     "tech": ["Vue 3", "Vite", "CSS"],
     "image": "/images/portfolio.png"
   },
   {
-    "title": "Site Web Art pour Vivre",
-    "description": "Ce site a été conçu en HTML et CSS dans le cadre d’un projet universitaire réalisé en équipe de trois. L’objectif était de développer un site vitrine pour une entreprise fictive du secteur événementiel. Nous avons imaginé “Art pour Vivre”, une société spécialisée dans l’organisation d’expositions artistiques à travers la France.",
+    "id": "art-pour-vivre",
+    "titleKey": "projects.artPourVivre.title",
+    "descriptionKey": "projects.artPourVivre.description",
     "tech": ["HTML", "CSS"],
-    "image": "/src/images/site-art-pour-vivre.png"
+    "image": "/images/site-art-pour-vivre.png"
   },
   {
-    "title": "Site Web Art pour Vivre",
-    "description": "Ce site a été conçu en HTML et CSS dans le cadre d’un projet universitaire réalisé en équipe de trois. L’objectif était de développer un site vitrine pour une entreprise fictive du secteur événementiel. Nous avons imaginé “Art pour Vivre”, une société spécialisée dans l’organisation d’expositions artistiques à travers la France.",
-    "tech": ["HTML", "CSS"],
-    "image": "/src/images/site-art-pour-vivre.png"
-  },
-  {
-    "title": "Site Web Art pour Vivre",
-    "description": "Ce site a été conçu en HTML et CSS dans le cadre d’un projet universitaire réalisé en équipe de trois. L’objectif était de développer un site vitrine pour une entreprise fictive du secteur événementiel. Nous avons imaginé “Art pour Vivre”, une société spécialisée dans l’organisation d’expositions artistiques à travers la France.",
-    "tech": ["HTML", "CSS"],
-    "image": "/src/images/site-art-pour-vivre.png"
+    "id": "todo-app",
+    "titleKey": "projects.todoApp.title",
+    "descriptionKey": "projects.todoApp.description",
+    "tech": ["Vue 3", "Vite", "CSS", "LocalStorage"],
+    "image": "/images/todo-app.png"
   }
 ]

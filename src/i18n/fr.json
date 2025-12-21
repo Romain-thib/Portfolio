@@ -1,17 +1,22 @@
 {
   "projects": {
-    "project1": {
-      "title": "Mon premier projet",
-      "description": "Une application moderne en Vue.js"
+    "portfolioVue": {
+      "title": "Portfolio Vue.js",
+      "description": "SPA moderne réalisée avec Vue 3 et Vite."
     },
-    "project2": {
-      "title": "Gestionnaire de tâches",
-      "description": "Une application Laravel complète"
+    "artPourVivre": {
+      "title": "Site Web Art pour Vivre",
+      "description": "Ce site a été conçu en HTML et CSS dans le cadre d'un projet universitaire réalisé en équipe de trois. L'objectif était de développer un site vitrine pour une entreprise fictive du secteur événementiel. Nous avons imaginé \"Art pour Vivre\", une société spécialisée dans l'organisation d'expositions artistiques à travers la France."
+    },
+    "todoApp": {
+      "title": "Application Todo",
+      "description": "Une application de gestion de tâches construite avec Vue 3, Vite, et utilisant le LocalStorage pour la persistance des données."
     }
   },
   "ui": {
     "home": "Accueil",
     "projects": "Projets",
+    "button_view_projects": "Voir les projets",
     "theme_light": "Mode clair",
     "theme_dark": "Mode sombre",
     "footer_text": "Tous droits réservés"
