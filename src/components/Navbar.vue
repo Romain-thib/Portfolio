@@ -24,10 +24,10 @@ function toggleLang() {
          border-b border-stone-300 dark:border-slate-700"
 >
     <div
-      class="text-xl font-bold text-zinc-800 dark:text-slate-100"
+      class="text-xl font-bold text-zinc-800 dark:text-amber-400"
       @click="router.push('/')"
     >
-      Romain
+      <p>Romain</p>
     </div>
 
     <div class="flex items-center gap-6">
@@ -40,23 +40,31 @@ function toggleLang() {
       </router-link>
 
       <router-link
+      to="/about"
+        class="text-zinc-700 dark:text-slate-200
+                hover:text-blue-950 dark:hover:text-amber-400 transition"
+      >
+        {{ $t('ui.about') }}
+      </router-link>
+
+      <router-link
         to="/projects"
         class="text-slate-700 dark:text-slate-200 hover:text-blue-950 dark:hover:text-amber-400 transition"
       >
         {{ $t('ui.projects') }}
       </router-link>
 
-      <button @click="toggleLang" class="p-1 rounded hover:bg-slate-200 dark:hover:bg-slate-700">
+      <button @click="toggleLang" class="p-1 rounded  dark:hover:bg-slate-600 hover:hover:bg-stone-300">
         <img
           :src="locale === 'fr' ? frFlag : enFlag"
           alt="flag"
-          class="w-6 h-4 object-cover rounded-sm"
+          class="w-6 h-5 object-cover rounded-sm"
         />
       </button>
 
       <button
         @click="ui.toggleTheme"
-        class="p-2 rounded hover:bg-slate-200 dark:hover:bg-slate-700 transition"
+        class="p-1 rounded dark:hover:bg-slate-600 hover:hover:bg-stone-300"
       >
         <SunIcon v-if="ui.isDark" class="w-6 h-6 text-amber-400" />
         <MoonIcon v-else class="w-6 h-6 text-slate-700" />

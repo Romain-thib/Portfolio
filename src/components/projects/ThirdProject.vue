@@ -1,13 +1,13 @@
 <script setup>
-import projects from '../data/projects.json'
-import ProjectCard from '../components/ProjectCard.vue'
+import projects from '../../data/projects.json'
+import ProjectCard from './ProjectCard.vue'
 
 const featured = projects.slice(0, 3)
 </script>
 
 <template>
-  <section class="py-16 bg-stone-100 dark:bg-slate-900">
-    <h2 class="text-3xl font-semibold tracking-tight mb-10 text-zinc-800 dark:text-slate-100 text-center">
+  <section class="py-16 bg-stone-100 dark:bg-slate-900 mx-5">
+    <h2 class="text-3xl font-semibold tracking-tight mb-10 text-zinc-800 dark:text-amber-400 text-center">
       Mes projets
     </h2>
 

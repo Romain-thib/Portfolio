@@ -2,7 +2,7 @@ import { defineStore } from 'pinia'
 import { ref } from 'vue'
 
 export const useUiStore = defineStore('ui', () => {
-  const isDark = ref(false)
+  const isDark = ref(true)
   const language = ref('fr')
 
   function toggleTheme() {
