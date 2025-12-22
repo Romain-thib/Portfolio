@@ -28,7 +28,7 @@ defineProps({
       class="w-full h-50 object-cover rounded-lg"
     />
 
-    <p class="text-zinc-600 dark:text-slate-300 text-2xs leading-relaxed">
+    <p class="text-zinc-800 dark:text-slate-300 text-2xs leading-relaxed">
       {{ t(project.descriptionKey) }}
     </p>
 

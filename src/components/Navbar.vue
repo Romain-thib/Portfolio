@@ -24,7 +24,7 @@ function toggleLang() {
          border-b border-stone-300 dark:border-slate-700"
 >
     <div
-      class="text-xl font-bold text-zinc-800 dark:text-amber-400"
+      class="text-xl font-bold hover:text-zinc-800 dark:text-amber-400"
       @click="router.push('/')"
     >
       <p>Romain</p>
@@ -34,7 +34,7 @@ function toggleLang() {
       <router-link
       to="/"
         class="text-zinc-700 dark:text-slate-200
-                hover:text-blue-950 dark:hover:text-amber-400 transition"
+                hover:text-zinc-900 dark:hover:text-amber-400 transition"
       >
         {{ $t('ui.home') }}
       </router-link>
@@ -42,14 +42,14 @@ function toggleLang() {
       <router-link
       to="/about"
         class="text-zinc-700 dark:text-slate-200
-                hover:text-blue-950 dark:hover:text-amber-400 transition"
+                hover:text-zinc-900 dark:hover:text-amber-400 transition"
       >
         {{ $t('ui.about') }}
       </router-link>
 
       <router-link
         to="/projects"
-        class="text-slate-700 dark:text-slate-200 hover:text-blue-950 dark:hover:text-amber-400 transition"
+        class="text-slate-700 dark:text-slate-200 hover:text-zinc-900 dark:hover:text-amber-400 transition"
       >
         {{ $t('ui.projects') }}
       </router-link>
