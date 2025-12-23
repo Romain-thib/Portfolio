@@ -29,5 +29,24 @@
   "presentation": {
     "title": "About me",
     "description": "My name is Romain THIBAUT, I am 19 years old and I am a second-year student studying Computer Science at the University Institute of Technology in Lens. I am currently looking for an internship starting on April 13 in the field of web development or application development."
+  },
+  "timeline": {
+     "title": "My Journey",
+     "lycee": {
+      "date": "2021 - 2024",
+      "city": "Arras",
+      "place": "Lycée Robespierre",
+      "diploma": "General Baccalaureate",
+      "subtitle": "Specializations: Math & Computer Science",
+      "description": "A few words about your high school experience."
+     },  
+     "but": {
+      "date": "2024-Present",
+      "city": "Lens",
+      "place": "University Institute of Technology",
+      "diploma": "Bachelor of Technology",
+      "subtitle": "Application Design and Development",
+      "description": "Description of your current studies..." 
+    }
   }
 }

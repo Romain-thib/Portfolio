@@ -28,6 +28,26 @@
   },
   "presentation": {
     "title": "À propos de moi",
-    "description": "Je m'appelle Romain THIBAUT, 19 ans, étudiant en deuxième année de BUT Informatique à l'IUT de Lens. Je recherche actuellement un stage à partir du 13 avril, dans le domaine du développement web ou du développement d'applications."
+    "description1": "Salut, moi c'est Romain, j'ai 19 ans. Actuellement étudiant en deuxième année de BUT Informatique à l'IUT de Lens. Je recherche actuellement un stage à partir du 13 avril, dans le domaine du développement web ou du développement d'applications.",
+    "description2": "Salut, moi c'est Romain, j'ai 19 ans. Actuellement étudiant en deuxième année de BUT Informatique à l'IUT de Lens. Je recherche actuellement un stage à partir du 13 avril, dans le domaine du développement web ou du développement d'applications."
+  },
+  "timeline": {
+     "title": "Mon parcours",
+     "lycee": {
+      "date": "2021 - 2024",
+      "city": "Arras",
+      "place": "Lycée Robespierre",
+      "diploma": "Baccalauréat général",
+      "subtitle": "Spécialités Maths & NSI",
+      "description": "Quelques mots sur ton parcours au lycée."
+     },  
+     "but": {
+      "date": "2024-Aujourd'hui",
+      "city": "Lens",
+      "place": "Institut Universitaire de Technologie",
+      "diploma": "Bachelor Universitaire de Technologie",
+      "subtitle": "Conception et réalisation d'applications",
+      "description": "Description de ton parcours actuel..." 
+    }
   }
 }

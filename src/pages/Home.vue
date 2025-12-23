@@ -11,10 +11,10 @@ const featured = projects.slice(0, 3)
   <section class="relative py-16 bg-stone-100 dark:bg-slate-900 overflow-hidden">
 
     <div class="absolute inset-0 pointer-events-none z-0">
-      <div class="right-2/30 ml-5 top-7 opacity-100 absolute 
+      <div class="right-2/30 ml-5 top-7 opacity-100 absolute  rotate-280
                   w-23 sm:w-28 md:w-30 lg:w-30 xl:w-40
-                  mt-0 sm:mt-0 md:-mt-3 lg:-mt-3 xl:mt-10
-                  -mr-3 sm:mr-0 md:-mr-1 lg:-mr-2 xl:mr-0 2xl:mr-20">
+                  -mt-13 sm:-mt-10 md:-mt-11 lg:-mt-11 xl:mt-6
+                  -mr-15 sm:-mr-13 md:-mr-10 lg:-mr-11 xl:-mr-10 2xl:mr-11">
         <RaquetteAnimation />
       </div>
 
@@ -31,7 +31,7 @@ const featured = projects.slice(0, 3)
         {{ $t("presentation.title") }}
       </h2>
 
-      <p class="relative z-10 px-[3%] max-w-4xl mx-auto leading-relaxed text-lg text-slate-700 dark:text-slate-300"> 
+      <p class="relative z-10 px-[3%] max-w-4xl mx-auto text-justify leading-relaxed text-lg text-slate-700 dark:text-slate-300"> 
         {{ $t("presentation.description") }}
       </p>
     </div>
