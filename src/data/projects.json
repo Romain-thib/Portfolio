@@ -3,14 +3,16 @@
     "titleKey": "projects.lens-symphony-web.title",
     "descriptionKey": "projects.lens-symphony-web.description",
     "tech": ["PHP", "HTML", "LARAVEL", "TAILWIND CSS"],
-    "image": "/images/lens_symphony.png"
+    "image": "/images/lens_symphony.png",
+    "lien" : "fs"
   },
   {
     "id": "bomberman",
     "titleKey": "projects.bomberman.title",
     "descriptionKey": "projects.bomberman.description",
     "tech": ["JAVA", "JavaFX"],
-    "image": "/images/projet_bomberman.png"
+    "image": "/images/projet_bomberman.png",
+    "lien" : "fe"
   },
   {
     "id": "art-pour-vivre",
@@ -18,12 +20,15 @@
     "descriptionKey": "projects.artPourVivre.description",
     "tech": ["HTML", "CSS"],
     "image": "/images/site-art-pour-vivre.png"
+    ,
+    "lien" : "fe"
   },
   {
     "id": "l-o-rhone",
     "titleKey": "projects.l-o-rhone.title",
     "descriptionKey": "projects.l-o-rhone.description",
     "tech": ["Java", "JavaFX"],
-    "image": "/images/projet_eau_sae.png"
+    "image": "/images/projet_eau_sae.png",
+    "lien" : "fe"
   }
 ]

@@ -21,7 +21,7 @@ const filteredProjects = computed(() => {
 
 <template>
   <section class="py-10">
-    <h2 class="text-3xl font-bold mb-6 text-center">Tous mes projets</h2>
+    <h2 class="text-4xl font-semibold tracking-tight mb-10 text-zinc-800 dark:text-amber-400 text-center">Tous mes projets</h2>
 
     <!-- Filtre par technologie -->
     <ProjectFilter
@@ -29,14 +29,8 @@ const filteredProjects = computed(() => {
       v-model:selected-tech="selectedTech"
     />
 
-    <!-- Compteur de résultats -->
-    <p class="text-center mb-8 text-zinc-600 dark:text-slate-400">
-      {{ filteredProjects.length }} projet{{ filteredProjects.length > 1 ? 's' : '' }} 
-      <span v-if="selectedTech">avec {{ selectedTech }}</span>
-    </p>
-
     <!-- Grille des projets -->
-    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="max-w-7xl px-5 mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
       <ProjectCard
         v-for="p in filteredProjects"
         :key="p.id"

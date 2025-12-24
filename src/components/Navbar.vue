@@ -54,6 +54,13 @@ function toggleLang() {
         {{ $t('ui.projects') }}
       </router-link>
 
+      <router-link
+        to="/skills"
+        class="text-slate-700 dark:text-slate-200 hover:text-zinc-900 dark:hover:text-amber-400 transition"
+      >
+        {{ $t('ui.skills') }}
+      </router-link>
+
       <button @click="toggleLang" class="p-1 rounded  dark:hover:bg-slate-600 hover:hover:bg-stone-300">
         <img
           :src="locale === 'fr' ? frFlag : enFlag"

@@ -20,6 +20,7 @@
   "ui": {
     "home": "Home",
     "projects": "Projects",
+    "skills": "Skills",
     "about": "About me",
     "button_view_projects": "View projects",
     "theme_light": "Light mode",
