@@ -23,7 +23,7 @@
         </p>
       </div>
 
-      <div class="mx-10 mt-15 flex flex-col items-center justify-start 2xl:ml-[0%] mr-5 h-200 lg:mt-0 lg:border-l lg:border-slate-300 dark:lg:border-amber-400 lg:pl-12">
+      <div class="mx-10 mt-15 flex flex-col items-center justify-start 2xl:ml-[0%] mr-10 h-200 lg:mt-0 lg:border-l lg:border-slate-300 dark:lg:border-amber-400 lg:pl-12">
         <Timeline>
           <TimelineItem
             :title="$t('timeline.but.title')"
@@ -38,7 +38,7 @@
           />
         </Timeline>
       </div>
-
+      
     </div>
   </div>
 </template>

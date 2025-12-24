@@ -28,7 +28,9 @@
   },
   "presentation": {
     "title": "About me",
-    "description": "My name is Romain THIBAUT, I am 19 years old and I am a second-year student studying Computer Science at the University Institute of Technology in Lens. I am currently looking for an internship starting on April 13 in the field of web development or application development."
+    "description1": "Hi, I'm Romain, I'm 19 years old. I'm currently a second-year Computer Science student at the IUT of Lens. I'm looking for an internship starting from April 13th, in the field of web development or application development.",
+    "description2": "Alongside my studies, I’m passionate about several activities that help me grow both personally and professionally. I play table tennis in a team, a sport that has taught me mutual support, working together toward a common goal, and progressing individually at the same time. I also play chess (online), a discipline that strengthens my concentration, my ability to calculate several moves ahead, and to consider multiple possibilities instead of getting stuck on a single scenario.",
+    "description3": "I also enjoy reading, especially novels; I even recommend “Demain dès l’aube” by Romain Gary, a book that left a strong impression on me. Finally, I’m a loyal supporter of the Racing Club de Lens: I love the idea of supporting the team and its players no matter what, through difficult moments as well as moments of glory."
   },
   "timeline": {
      "title": "My Journey",

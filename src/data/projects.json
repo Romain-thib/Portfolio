@@ -9,7 +9,7 @@
     "id": "bomberman",
     "titleKey": "projects.bomberman.title",
     "descriptionKey": "projects.bomberman.description",
-    "tech": ["JAVA", "JAVA FX"],
+    "tech": ["JAVA", "JavaFX"],
     "image": "/images/projet_bomberman.png"
   },
   {
@@ -23,7 +23,7 @@
     "id": "l-o-rhone",
     "titleKey": "projects.l-o-rhone.title",
     "descriptionKey": "projects.l-o-rhone.description",
-    "tech": ["Java", "JavaFx"],
+    "tech": ["Java", "JavaFX"],
     "image": "/images/projet_eau_sae.png"
   }
 ]
