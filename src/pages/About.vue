@@ -19,7 +19,7 @@
           <br><br>
           {{ $t("presentation.description2") }}
           <br><br>
-          {{ $t("presentation.description2") }}
+          {{ $t("presentation.description3") }}
         </p>
       </div>
 

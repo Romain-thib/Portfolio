@@ -32,7 +32,7 @@ const featured = projects.slice(0, 3)
       </h2>
 
       <p class="relative z-10 px-[3%] max-w-4xl mx-auto text-justify leading-relaxed text-lg text-slate-700 dark:text-slate-300"> 
-        {{ $t("presentation.description") }}
+        {{ $t("presentation.description1") }}
       </p>
     </div>
     
