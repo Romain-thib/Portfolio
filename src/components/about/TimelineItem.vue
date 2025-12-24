@@ -11,7 +11,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="relative flex items-start -ml-20">
+  <div class="relative flex items-start mx-[30%] max-w-3xl">
     
     <!-- Cercle décoratif avec animation pour "Aujourd'hui" -->
     <div 

@@ -1,18 +1,55 @@
 <script setup>
+import { ref, computed } from 'vue'
 import projects from '../data/projects.json'
 import ProjectCard from '../components/projects/ProjectCard.vue'
+import ProjectFilter from '../components/projects/ProjectFilter.vue'
+
+const selectedTech = ref('')
+
+// Filtrer les projets selon la technologie sélectionnée
+const filteredProjects = computed(() => {
+  if (!selectedTech.value) {
+    return projects
+  }
+  return projects.filter(project =>
+    project.tech.some(tech => 
+      tech.toUpperCase() === selectedTech.value.toUpperCase()
+    )
+  )
+})
 </script>
 
 <template>
   <section class="py-10">
     <h2 class="text-3xl font-bold mb-6 text-center">Tous mes projets</h2>
 
+    <!-- Filtre par technologie -->
+    <ProjectFilter
+      :projects="projects"
+      v-model:selected-tech="selectedTech"
+    />
+
+    <!-- Compteur de résultats -->
+    <p class="text-center mb-8 text-zinc-600 dark:text-slate-400">
+      {{ filteredProjects.length }} projet{{ filteredProjects.length > 1 ? 's' : '' }} 
+      <span v-if="selectedTech">avec {{ selectedTech }}</span>
+    </p>
+
+    <!-- Grille des projets -->
     <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
       <ProjectCard
-        v-for="p in projects"
-        :key="p.title"
+        v-for="p in filteredProjects"
+        :key="p.id"
         :project="p"
       />
+    </div>
+
+    <!-- Message si aucun résultat -->
+    <div
+      v-if="filteredProjects.length === 0"
+      class="text-center text-zinc-600 dark:text-slate-400 mt-8"
+    >
+      Aucun projet trouvé avec cette technologie.
     </div>
   </section>
 </template>
