@@ -39,7 +39,7 @@
       "city": "Arras",
       "place": "Lycée Robespierre",
       "diploma": "Baccalauréat général",
-      "subtitle": "Spécialités Maths & NSI",
+      "subtitle": "Spécialités : Mathématiques & NSI",
       "description": "Quelques mots sur ton parcours au lycée."
      },  
      "but": {
@@ -47,8 +47,7 @@
       "city": "Lens",
       "place": "Institut Universitaire de Technologie",
       "diploma": "Bachelor Universitaire de Technologie",
-      "subtitle": "Conception et réalisation d'applications",
-      "description": "Description de ton parcours actuel..." 
+      "subtitle": "Conception et réalisation d'applications"
     }
   }
 }

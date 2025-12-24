@@ -14,9 +14,12 @@ const timelineItems = ['but', 'lycee']
     </h2>
 
     <div class="relative flex flex-col gap-8 pl-6 ml-[20%]">
-      <div class="absolute -left-16 top-0 bottom-0 w-1 bg-gray-300 dark:bg-slate-800 rounded">
-      <div class="absolute top- left-1/2 -translate-x-1/2 w-5 h-5 border-l-5 border-t-5 border-gray-300 dark:border-slate-800 rotate-45 bg-white dark:bg-slate-900"></div>
+      <!-- Ligne verticale de la timeline -->
+      <div class="absolute -left-16 top-0 bottom-0 w-0.5 bg-linear-to-b from-transparent via-gray-300 to-gray-300 dark:via-slate-500 dark:to-slate-700 rounded">
       </div>
+      
+      <!-- Flèche vers le haut (sens du temps) -->
+      <div class="absolute -left-17 -top-2 flex flex-col items-center"></div>
       
       <TimelineItem
         v-for="item in timelineItems"
