@@ -28,14 +28,15 @@ const featured = projects.slice(0, 3)
 
     <div class="mt-10">
       <h2 class="relative z-10 text-4xl font-semibold tracking-tight mb-10 text-zinc-800 dark:text-amber-400 text-center">
-        {{ $t("presentation.title") }}
+        {{ $t("home-presentation.title") }}
       </h2>
 
       <p class="relative z-10 px-[3%] max-w-4xl mx-auto text-justify leading-relaxed text-lg text-slate-700 dark:text-slate-300"> 
-        {{ $t("presentation.description1") }}
+        {{ $t("home-presentation.sentence") }}
       </p>
     </div>
-    
+
+
 
     <ThirdProject class="mt-70 z-10" />
   </section>  
