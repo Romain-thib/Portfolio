@@ -1,13 +1,11 @@
 <script setup>
 import { useI18n } from 'vue-i18n'
 import SkillsCard from '../components/skills/SkillsCard.vue'
-import projects from '../data/projects.json'
+import skills from '../data/skills.json'
 
 const { t } = useI18n()
 
-// Extraire toutes les compétences uniques de tous les projets
-// Normaliser en majuscules pour éviter les doublons (ex: "PHP" et "php")
-const allTechs = [...new Set(projects.flatMap(p => p.tech.map(t => t.toUpperCase())))]
+const allTechs = skills
 </script>
 
 <template>
@@ -19,9 +17,10 @@ const allTechs = [...new Set(projects.flatMap(p => p.tech.map(t => t.toUpperCase
       
       <ul class="flex flex-wrap gap-4 justify-center">
         <SkillsCard
-          v-for="tech in allTechs"
-          :key="tech"
+          v-for="(tech, index) in allTechs"
+          :key="tech.name"
           :tech="tech"
+          :color-index="index"
         />
       </ul>
     </div>

@@ -1,0 +1,70 @@
+[
+  {
+    "name": "PHP",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+  },
+  {
+    "name": "HTML",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+  },
+  {
+    "name": "LARAVEL",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg"
+  },
+  {
+    "name": "TAILWIND CSS",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+  },
+  {
+    "name": "VUE",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"
+  },
+  {
+    "name": "CSS",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+  },
+  {
+    "name": "NODE",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+  },
+  {
+    "name": "PYTHON",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+  },
+  {
+    "name": "FLASK",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"
+  },
+  {
+  "name": "SQLite",
+  "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg"
+  },
+  {
+    "name": "POSTGRESQL",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+  },
+  {
+    "name": "GIT",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+  },
+  {
+    "name": "GITLAB",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg"
+  },
+  {
+    "name": "GitHUB",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+  },
+  {
+    "name": "JAVA",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+  },
+  {
+    "name": "JavaFX",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+  },
+  {
+    "name": "MCD/MLD",
+    "logo": "images/mcd-mld.svg"
+  }
+]

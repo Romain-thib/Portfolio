@@ -40,14 +40,6 @@ function toggleLang() {
       </router-link>
 
       <router-link
-      to="/about"
-        class="text-zinc-700 dark:text-slate-200
-                hover:text-zinc-900 dark:hover:text-amber-400 transition"
-      >
-        {{ $t('ui.about') }}
-      </router-link>
-
-      <router-link
         to="/projects"
         class="text-slate-700 dark:text-slate-200 hover:text-zinc-900 dark:hover:text-amber-400 transition"
       >
@@ -59,6 +51,14 @@ function toggleLang() {
         class="text-slate-700 dark:text-slate-200 hover:text-zinc-900 dark:hover:text-amber-400 transition"
       >
         {{ $t('ui.skills') }}
+      </router-link>
+
+      <router-link
+      to="/about"
+        class="text-zinc-700 dark:text-slate-200
+                hover:text-zinc-900 dark:hover:text-amber-400 transition"
+      >
+        {{ $t('ui.about') }}
       </router-link>
 
       <button @click="toggleLang" class="p-1 rounded  dark:hover:bg-slate-600 hover:hover:bg-stone-300">
