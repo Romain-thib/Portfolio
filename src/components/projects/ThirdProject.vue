@@ -7,7 +7,7 @@ const featured = projects.slice(0, 3)
 
 <template>
   <section class="py-16 bg-stone-100 dark:bg-slate-900 mx-5">
-    <h2 class="text-3xl font-semibold tracking-tight mb-10 text-zinc-800 dark:text-emerald-500 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white text-center pb-10">
       Mes projets
     </h2>
 
@@ -22,8 +22,9 @@ const featured = projects.slice(0, 3)
     <div class="text-center mt-16">
       <router-link
         to="/projects"
-        class="inline-block  bg-blue-900 hover:bg-blue-950
-         text-white px-8 py-3 rounded-lg transition"
+        class="px-8 py-3 bg-emerald-600 hover:bg-emerald-700 
+                   text-white font-semibold rounded-lg
+                   transition transform hover:scale-105"
       >
         {{ $t('ui.button_view_projects') }}
       </router-link>

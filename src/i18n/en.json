@@ -22,6 +22,7 @@
     "projects": "Projects",
     "skills": "Skills",
     "about": "About me",
+    "contact": "Contact",
     "button_view_projects": "View projects",
     "theme_light": "Light mode",
     "theme_dark": "Dark mode",
@@ -53,6 +54,35 @@
       "place": "University Institute of Technology",
       "diploma": "Bachelor of Technology",
       "subtitle": "Application Design and Development"
+    }
+  },
+  "contact": {
+    "title": "Contact Me",
+    "description": "You can send me an email if you have any questions or require further information.",
+    "socialMedia": "Find me on social media"
+  },
+  "home": {
+    "me": {
+      "role": "Full Stack Developer",
+      "tagline": "Passionate about creating modern and high-performance web applications",
+      "cta_projects": "About me",
+      "cta_contact": "Contact me"
+    },
+    "projects": {
+      "title": "Featured Projects",
+      "subtitle": "Discover a selection of my recent work",
+      "view_all": "View all projects"
+    },
+    "skills": {
+      "title": "Key Skills",
+      "subtitle": "Technologies and areas of expertise",
+      "view_all": "View all my skills"
+    },
+    "cta": {
+      "title": "Have a project in mind?",
+      "description": "I would be delighted to discuss with you and bring your ideas to life",
+      "contact_button": "Contact me",
+      "about_button": "Learn more"
     }
   }
 }

@@ -22,6 +22,7 @@
     "projects": "Projets",
     "skills": "Compétences",
     "about": "À propos",
+    "contact" : "Contact",
     "button_view_projects": "Voir les projets",
     "theme_light": "Mode clair",
     "theme_dark": "Mode sombre",
@@ -32,10 +33,6 @@
     "description1": "Salut, moi c'est Romain, j'ai 19 ans. Actuellement étudiant en deuxième année de BUT Informatique à l'IUT de Lens. Je recherche actuellement un stage à partir du 13 avril, dans le domaine du développement web ou du développement d'applications.",
     "description2": "En parallèle de mes études, je suis passionné par plusieurs activités qui m’aident à progresser autant sur le plan personnel que professionnel. Je pratique le tennis de table en équipe, un sport qui m’a appris à m’entraider avec mes coéquipiers pour atteindre un objectif commun tout en continuant à progresser individuellement. Je joue également aux échecs (en ligne), une discipline qui développe ma concentration, ma capacité à calculer plusieurs coups à l’avance et à envisager différentes solutions plutôt que de rester bloqué sur un seul scénario.",
     "description3": "J’apprécie aussi la lecture, notamment les romans; je recommande d’ailleurs “Demain dès l’aube” de Romain Gary, une œuvre qui m’a marqué. Enfin, je suis un supporter fidèle du Racing Club de Lens : j’aime l’idée de soutenir son équipe et ses joueurs quoi qu’il arrive, dans le malheur comme dans la gloire."
-  },
-  "home-presentation": {
-    "title": "Romain THIBAUT",
-    "sentence" : "Bienvenue sur "
   },
   "timeline": {
      "title": "Mon parcours",
@@ -53,6 +50,35 @@
       "place": "Institut Universitaire de Technologie",
       "diploma": "Bachelor Universitaire de Technologie",
       "subtitle": "Conception et réalisation d'applications"
+    }
+  },
+  "contact": {
+    "title": "Contactez-moi",
+    "description": "Vous pouvez m'envoyer un mail pour toute question ou information complémentaire.",
+    "socialMedia": "Retrouvez-moi sur les réseaux sociaux"
+  },
+  "home": {
+    "me": {
+      "role": "Développeur Full Stack",
+      "tagline": "Passionné par la création d'applications web modernes et performantes",
+      "cta_projects": "À propos de moi",
+      "cta_contact": "Me contacter"
+    },
+    "projects": {
+      "title": "Projets en vedette",
+      "subtitle": "Découvrez une sélection de mes réalisations récentes",
+      "view_all": "Voir tous les projets"
+    },
+    "skills": {
+      "title": "Compétences principales",
+      "subtitle": "Technologies et domaines d'expertise",
+      "view_all": "Voir toutes mes compétences"
+    },
+    "cta": {
+      "title": "Un projet en tête ?",
+      "description": "Je serais ravi d'échanger avec vous et de donner vie à vos idées",
+      "contact_button": "Contactez-moi",
+      "about_button": "En savoir plus"
     }
   }
 }
