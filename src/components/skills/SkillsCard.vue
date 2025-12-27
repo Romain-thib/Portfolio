@@ -20,6 +20,8 @@ const colorPalette = [
 const getColor = () => {
   return colorPalette[props.colorIndex % colorPalette.length]
 }
+
+const defaultLogo = '/images/default-skill.svg'
 </script>
 
 <template>

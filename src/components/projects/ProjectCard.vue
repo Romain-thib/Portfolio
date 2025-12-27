@@ -14,8 +14,8 @@ defineProps({
 
 <template>
   <div
-    class="bg-stone-50 bg-linear-to-br dark:from-slate-900 dark:to-slate-800
-           border border-stone-200 dark:border-slate-700
+    class="bg-slate-100 bg-linear-to-br dark:from-slate-900 dark:to-slate-800
+           border border-slate-200 dark:border-slate-700
            rounded-xl shadow-sm hover:shadow-lg
            p-6 flex flex-col gap-6 transition-shadow"
   >

@@ -9,7 +9,7 @@ const timelineItems = ['but', 'lycee']
 
 <template>
   <div class="w-full mt-1 -ml-10">
-    <h2 class="relative z-10 text-4xl font-semibold tracking-tight mb-10 text-zinc-800 dark:text-amber-400 text-center">
+    <h2 class="relative z-10 text-5xl font-semibold tracking-tight mb-10 text-slate-900 dark:text-gray-100 text-center">
       {{ t('timeline.title') }}
     </h2>
 

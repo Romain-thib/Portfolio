@@ -7,7 +7,7 @@ const featured = projects.slice(0, 3)
 
 <template>
   <section class="py-16 bg-stone-100 dark:bg-slate-900 mx-5">
-    <h2 class="text-3xl font-semibold tracking-tight mb-10 text-zinc-800 dark:text-amber-400 text-center">
+    <h2 class="text-3xl font-semibold tracking-tight mb-10 text-zinc-800 dark:text-emerald-500 text-center">
       Mes projets
     </h2>
 

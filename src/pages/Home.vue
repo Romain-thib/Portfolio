@@ -27,7 +27,7 @@ const featured = projects.slice(0, 3)
     </div>
 
     <div class="mt-10">
-      <h2 class="relative z-10 text-4xl font-semibold tracking-tight mb-10 text-zinc-800 dark:text-amber-400 text-center">
+      <h2 class="relative z-10 text-4xl font-semibold tracking-tight mb-10 text-zinc-800 dark:text-emerald-500 text-center">
         {{ $t("home-presentation.title") }}
       </h2>
 

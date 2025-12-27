@@ -13,11 +13,11 @@ const props = defineProps({
 <template>
   <div class="relative flex items-start -ml-20">
     
-    <div class="absolute -left-[1.06rem] top-15 w-5 h-5 bg-slate-800 dark:bg-amber-400  rotate-45 transition-all duration-300"
-        :class="isCurrent ? 'scale-110 shadow-lg shadow-amber-500/50 dark:shadow-amber-400/50' : ''">
+    <div class="absolute -left-[1.06rem] top-15 w-5 h-5 bg-slate-800 dark:bg-emerald-600  rotate-45 transition-all duration-300"
+        :class="isCurrent ? 'scale-110 shadow-lg shadow-emerald-500/50 dark:shadow-emerald-400/50' : ''">
       <div 
         v-if="isCurrent"
-        class="absolute inset-0 dark:bg-amber-500 bg-slate-800 animate-ping opacity-40"
+        class="absolute inset-0 dark:bg-emerald-500 bg-slate-800 animate-ping opacity-40"
       ></div>
       <div 
         class="absolute inset-1 bg-white dark:bg-slate-900"
@@ -28,7 +28,7 @@ const props = defineProps({
     <div class="m-5 p-5 ml-8 w-full max-w-138 mr-5 min-h-50 bg-stone-200 dark:bg-slate-900 bg-linear-to-br dark:from-slate-900 dark:to-slate-800
                 border border-stone-300 dark:border-slate-800 rounded-xl">
       
-      <div class="text-sm font-medium text-amber-600 dark:text-amber-500 mb-2">
+      <div class="text-sm font-medium text-emerald-600 dark:text-emerald-500 mb-2">
         {{ date }}
       </div>
 
