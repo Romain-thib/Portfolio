@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="min-h-[80vh] pt-15 pb-1 mb-10 ">
+  <div class="min-h-[80vh] pt-15 pb-1 my-10">
     <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-12 max-w-40xl mx-auto">
 
       <div class="mx-10 mt-1 flex flex-col items-center justify-start">

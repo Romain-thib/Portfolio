@@ -20,7 +20,7 @@ const filteredProjects = computed(() => {
 </script>
 
 <template>
-  <section class="py-10">
+  <section class="py-10 mt-15">
     <h2 class="text-5xl font-semibold tracking-tight mb-10 text-zinc-800 dark:text-gray-100 text-center">Tous mes projets</h2>
 
     <!-- Filtre par technologie -->

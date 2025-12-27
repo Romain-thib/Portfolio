@@ -29,13 +29,10 @@ function navigateAndClose(path) {
 </script>
 
 <template>
-  <nav
-    class="w-full px-6 py-4 bg-stone-200 dark:bg-slate-800
-           border-b border-stone-300 dark:border-slate-700"
+  <nav class="fixed top-0 left-0 z-50 w-full px-6 py-4 bg-stone-200
+             dark:bg-slate-800 border-b border-stone-300 dark:border-slate-700"
   >
-    <!-- Desktop & Mobile Header -->
     <div class="flex items-center justify-between">
-      <!-- Logo -->
       <div
         class="text-xl font-bold hover:text-zinc-800 dark:text-emerald-400 cursor-pointer"
         @click="navigateAndClose('/')"

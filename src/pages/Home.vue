@@ -1,7 +1,6 @@
 <script setup>
 import { useRouter } from 'vue-router'
 import { computed } from 'vue'
-import projects from '../data/projects.json'
 import skills from '../data/skills.json'
 import ThirdProject from '../components/projects/ThirdProject.vue'
 import RaquetteAnimation from '../components/images/RaquetteAnimation.vue'
@@ -14,13 +13,12 @@ import {
 } from '@heroicons/vue/24/outline'
 
 const router = useRouter()
-const featured = projects.slice(0, 3)
 
 const keySkills = computed(() => {
   const selectedSkills = [
     'Java',
     'Laravel', 
-    'Python',
+    'HTML',
     'PostgreSQL',
     'Git',
     'Tailwind CSS'
@@ -32,8 +30,8 @@ const keySkills = computed(() => {
 
 <template>
   <section class="relative min-h-[85vh] flex items-center justify-center overflow-hidden
-                    bg-gradient-to-br from-stone-50 to-stone-200 
-                    dark:from-slate-900 dark:to-slate-800">
+                    bg-linear-to-br from-stone-50 to-stone-200 
+                    dark:from-slate-900 dark:to-slate-800 mt-10">
       
       <div class="absolute inset-0 pointer-events-none">
         <div class="right-2/30 ml-5 top-7 opacity-100 absolute  rotate-280
@@ -70,18 +68,18 @@ const keySkills = computed(() => {
         </h1>
         
         <p class="text-2xl md:text-3xl mb-4 text-zinc-700 dark:text-slate-300 font-light">
-          {{ $t('home.me.role') || 'Développeur Full Stack' }}
+          {{ $t('home.me.role') }}
         </p>
         
         <p class="text-lg md:text-xl mb-10 text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-          {{ $t('home.me.tagline') || 'Passionné par la création d\'applications web modernes et performantes' }}
+          {{ $t('home.me.tagline') }}
         </p>
 
         <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <button
             @click="router.push('/about')"
-            class="px-8 py-3 bg-emerald-500 hover:bg-emerald-600 
-                   text-white font-semibold rounded-lg
+            class="px-8 py-3 bg-emerald-500 hover:bg-emerald-800 
+                   text-white font-semibold rounded-lg cursor-pointer
                    transition transform hover:scale-105
                    flex items-center gap-2"
           >
@@ -92,8 +90,8 @@ const keySkills = computed(() => {
           <button
             @click="router.push('/contact')"
             class="px-8 py-3 bg-transparent border-2 border-zinc-700 dark:border-emerald-500
-                   text-zinc-700 dark:text-emerald-500 font-semibold rounded-lg
-                   hover:bg-zinc-700 hover:text-white dark:hover:bg-emerald-500 dark:hover:text-white
+                   text-zinc-700 dark:text-emerald-500 font-semibold rounded-lg cursor-pointer
+                   hover:bg-zinc-700 hover:text-white dark:hover:bg-emerald-800 dark:hover:text-white
                    transition transform hover:scale-105
                    flex items-center gap-2"
           >
@@ -138,7 +136,7 @@ const keySkills = computed(() => {
         <div class="text-center mt-12">
           <button
             @click="router.push('/skills')"
-            class="text-lg md:text-xl mb-8 text-emerald-50
+            class="text-lg md:text-xl mb-8 text-emerald-50 cursor-pointer
                    font-semibold inline-flex items-center gap-2 transition"
           >
             {{ $t('home.skills.view_all') }}
@@ -149,38 +147,5 @@ const keySkills = computed(() => {
     </section>
 
     <ThirdProject class="z-10" />
-
-    <!-- Section Call To Action -->
-    <section class="py-20 bg-gradient-to-r from-emerald-500 to-emerald-600 dark:from-emerald-600 dark:to-emerald-700">
-      <div class="max-w-4xl mx-auto px-6 text-center">
-        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white">
-          {{ $t('home.cta.title') }}
-        </h2>
-        
-        <p class="text-lg md:text-xl mb-8 text-emerald-50">
-          {{ $t('home.cta.description') }}
-        </p>
-
-        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <button
-            @click="router.push('/contact')"
-            class="px-8 py-4 bg-white text-emerald-600 font-bold rounded-lg
-                   hover:bg-emerald-50 transition transform hover:scale-105
-                   inline-flex items-center gap-2"
-          >
-            <EnvelopeIcon class="w-6 h-6" />
-            {{ $t('home.cta.contact_button') }}
-          </button>
-          
-          <button
-            @click="router.push('/about')"
-            class="px-8 py-4 bg-transparent border-2 border-white text-white font-bold rounded-lg
-                   hover:bg-white hover:text-emerald-600 transition transform hover:scale-105"
-          >
-            {{ $t('home.cta.about_button') }}
-          </button>
-        </div>
-      </div>
-    </section>
 </template>
 
