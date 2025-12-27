@@ -31,7 +31,7 @@ const keySkills = computed(() => {
 <template>
   <section class="relative min-h-[85vh] flex items-center justify-center overflow-hidden
                     bg-linear-to-br from-stone-50 to-stone-200 
-                    dark:from-slate-900 dark:to-slate-800 mt-10">
+                    dark:from-slate-900 dark:to-slate-800 mt-15">
       
       <div class="absolute inset-0 pointer-events-none">
         <div class="right-2/30 ml-5 top-7 opacity-100 absolute  rotate-280

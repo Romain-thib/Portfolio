@@ -19,7 +19,7 @@ const cvLabel = computed(() =>
 </script>
 
 <template>
-  <div class="min-h-[80vh] pt-15 pb-1 my-10">
+  <div class="min-h-[80vh] pt-15 pb-1 mt-20">
     <div class="max-w-4xl mx-auto px-10">
       
       <h2 class="text-5xl font-semibold tracking-tight mb-10 text-zinc-800 dark:text-gray-100 text-center">

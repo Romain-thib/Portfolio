@@ -25,7 +25,7 @@ const groupedSkills = categoriesOrder.map(category => ({
 </script>
 
 <template>
-  <div class="min-h-[80vh] pt-15 pb-1 mt-10">
+  <div class="min-h-[80vh] pt-15 pb-1 mt-0">
     <div class="container mx-auto px-4">
       <h1 class="text-5xl font-bold mb-15 text-center">
         {{ t('ui.skills') }}
