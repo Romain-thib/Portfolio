@@ -3,6 +3,11 @@ import projects from '../../data/projects.json'
 import ProjectCard from './ProjectCard.vue'
 
 const featured = projects.slice(0, 3)
+
+import { 
+
+  ArrowRightIcon 
+} from '@heroicons/vue/24/outline'
 </script>
 
 <template>
@@ -19,15 +24,18 @@ const featured = projects.slice(0, 3)
       />
     </div>
 
-    <div class="text-center mt-16">
-      <router-link
-        to="/projects"
-        class="px-8 py-3 bg-emerald-600 hover:bg-emerald-700 
-                   text-white font-semibold rounded-lg
-                   transition transform hover:scale-105"
-      >
-        {{ $t('ui.button_view_projects') }}
-      </router-link>
+    <div>
+      <button
+            @click="router.push('/contact')"
+            class="mt-15 px-8 py-3 bg-transparent border-2 border-zinc-700 dark:border-emerald-500
+                   text-zinc-700 dark:text-emerald-500 font-semibold rounded-lg cursor-pointer
+                   hover:bg-zinc-700 hover:text-white dark:hover:bg-emerald-800 dark:hover:text-white
+                   transition transform hover:scale-105
+                   flex items-center gap-2 mx-auto"
+          >
+            {{ $t('home.projects.view_all') }}
+            <ArrowRightIcon class="w-5 h-5" />
+      </button>
     </div>
   </section>
 </template>

@@ -71,14 +71,8 @@
     },
     "skills": {
       "title": "Compétences principales",
-      "subtitle": "Technologies et domaines d'expertise",
+      "subtitle": "Technologies maîtrisées",
       "view_all": "Voir toutes mes compétences"
-    },
-    "cta": {
-      "title": "Un projet en tête ?",
-      "description": "Je serais ravi d'échanger avec vous et de donner vie à vos idées",
-      "contact_button": "Contactez-moi",
-      "about_button": "En savoir plus"
     }
   }
 }
