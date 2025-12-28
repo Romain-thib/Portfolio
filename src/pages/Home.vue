@@ -67,9 +67,11 @@ const keySkills = computed(() => {
           Romain
         </h1>
         
-        <p class="text-2xl md:text-3xl mb-4 text-zinc-700 dark:text-slate-300 font-light">
-          {{ $t('home.me.role') }}
-        </p>
+
+
+        <span class="relative text-2xl md:text-3xl inline-block before:absolute before:-inset-2 before:block before:-skew-y-4 before:bg-emerald-500 m-10">
+          <span class="relative text-white"> {{ $t('home.me.role') }}</span>  
+        </span>
         
         <p class="text-lg md:text-xl mb-10 text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
           {{ $t('home.me.tagline') }}
@@ -136,13 +138,21 @@ const keySkills = computed(() => {
         <div class="text-center mt-12">
           <button
             @click="router.push('/skills')"
-            class="text-lg md:text-xl mb-8 text-emerald-50 cursor-pointer
-                   font-semibold inline-flex items-center gap-2 transition"
+            class="group text-lg md:text-xl mb-8 text-emerald-50 cursor-pointer
+                  font-semibold inline-flex items-center gap-2 transition relative"
           >
-            {{ $t('home.skills.view_all') }}
+            <span class="relative">
+              {{ $t('home.skills.view_all') }}
+              <span
+                class="absolute left-0 -bottom-1 w-0 h-0.5 bg-emerald-50
+                      transition-all duration-300 group-hover:w-full"
+              ></span>
+            </span>
+
             <ArrowRightIcon class="w-5 h-5" />
           </button>
         </div>
+
       </div>
     </section>
 

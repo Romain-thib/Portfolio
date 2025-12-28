@@ -12,7 +12,7 @@ import {
 
 <template>
   <section class="py-16 bg-stone-100 dark:bg-slate-900 mx-5">
-    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white text-center pb-10">
+    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-zinc-800 dark:text-gray-100 text-center pb-10">
       Mes projets
     </h2>
 
