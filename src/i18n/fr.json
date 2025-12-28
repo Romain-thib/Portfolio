@@ -2,7 +2,7 @@
   "projects": {
     "bomberman": {
       "title": "Bomberman",
-      "description": "Ce projet, développé en JavaFX, consistait à reproduire le célèbre jeu Bomberman selon un cahier des charges précis. Le programme intègre différentes fonctionnalités : gestion des collisions, inventaire des bombes, système de points de vie et interface dynamique.."
+      "description": "Ce projet, développé en JavaFX, consistait à reproduire le jeu Bomberman selon un cahier des charges précis. Le programme intègre différentes fonctionnalités : gestion des collisions, inventaire des bombes, système de points de vie et interface dynamique."
     },
     "artPourVivre": {
       "title": "Site Web Art pour Vivre",
@@ -15,6 +15,26 @@
     "lens-symphony-web": {
       "title": "Site Web LensSymphony",
       "description": "Réalisée en binôme, cette application JavaFX permet la gestion des données d’une station de traitement d’eau. Elle offre la possibilité de gérer les clients, leurs commandes et les informations associées. Ce projet m’a permis de renforcer mes compétences en conception d’interfaces et en structuration de données."
+    },
+    "2048": {
+      "title": "2048",
+      "description": "Ce projet individuel visait à recréer le jeu 2048 avec JavaFX. J’ai conçu une interface claire et intuitive permettant à l’utilisateur de jouer facilement, tout en appliquant lesmécaniques de fusion et de déplacement des tuiles."
+    },
+    "lightsoff": {
+      "title": "Lights Off",
+      "description": "Ce jeu a été développé individuellement en JavaFX. L’objectif était de concevoir une version interactive du puzzle “Lights Off”. L’application propose une interface simple mais efficace, permettant de tester sa logique en essayant d’éteindre toutes les lumières."
+    },
+    "pacman": {
+      "title": "Pac-Man",
+      "description": "Ce travail de groupe (4 personnes) consistait à concevoir une adaptation du jeu Pac‑Man en JavaFX. L’objectif était d’introduire et d’expérimenter les patrons de conception."
+    },
+    "cinehub": {
+      "title": "CineHub",
+      "description": "Développé à quatre, CineHub est notre premier site web sous Laravel. Nous y avons intégré un CRUD ainsi qu’un système de commentaires par exemple. Ce site nous a permis de nous familiariser avec Laravel."
+    },
+    "osolsound": {
+      "title": "O-Sol-Sound",
+      "description": "Ce site web a été créé en 36 heures par un groupe de sept étudiants (trois étudiants en BUT Informatique et quatre étudiants en BUT du Métiers du Multimédia et de l'Internet). Le projet reproduit des conditions similaires à celles rencontrées dans le monde professionnel : collaboration entre des équipes qui ne se connaissent pas, respect des cahiers des charges, gestion de différentes méthodes de travail (dont l'intégration CSS) et prise en compte d'une contrainte musicale imposée, la bossa nova. "
     }
   },
   "ui": {

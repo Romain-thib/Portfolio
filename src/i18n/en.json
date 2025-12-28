@@ -2,19 +2,39 @@
   "projects": {
     "bomberman": {
       "title": "Bomberman",
-      "description": "Modern SPA built with Vue 3 and Vite."
+      "description": "This project, developed in JavaFX, consisted of reproducing the Bomberman game according to precise specifications. The programme integrates various features: collision management, bomb inventory, health points system and dynamic interface."
     },
     "artPourVivre": {
       "title": "Art pour Vivre Website",
       "description": "This website was designed in HTML and CSS as part of a university project carried out in a team of three. The goal was to develop a showcase site for a fictional company in the events sector. We created \"Art pour Vivre\", a company specializing in organizing art exhibitions across France."
     },
-    "todoApp": {
-      "title": "Todo Application",
-      "description": "A task management application built with Vue 3, Vite, and using LocalStorage for data persistence."
+    "l-o-rhone": {
+      "title": "Application L’Ô Rhône",
+      "description": "Developed as part of a pair, this JavaFX application manages data for a water treatment plant. It allows users to manage customers, their orders and related information. This project enabled me to strengthen my skills in interface design and data structuring."
     },
     "lens-symphony-web": {
       "title": "Site Web LensSymphony",
       "description": "Réalisée en binôme, cette application JavaFX permet la gestion des données d’une station de traitement d’eau. Elle offre la possibilité de gérer les clients, leurs commandes et les informations associées. Ce projet m’a permis de renforcer mes compétences en conception d’interfaces et en structuration de données."
+    },
+    "2048": {
+      "title": "2048",
+      "description": "This individual project was to recreate the game 2048 using JavaFX. I created a clear and intuitive interface that allows the user to play easily, while applying the mechanics of merging and moving tiles."
+    },
+    "lightsoff": {
+      "title": "Lights Off",
+      "description": "This game was developed individually in JavaFX. The goal was to design an interactive version of the ‘Lights Off’ puzzle. The application offers a simple but effective interface, allowing you to test your logic by trying to turn off all the lights."
+    },
+    "pacman": {
+      "title": "Pac-Man",
+      "description": "This group project (4 people) involved designing an adaptation of the Pac-Man game in JavaFX. The goal was to introduce and experiment with design patterns."
+    },
+    "cinehub": {
+      "title": "CineHub",
+      "description": "Developed by four people, CineHub is our first website built with Laravel. We integrated a CRUD and a comment system, for example. This site allowed us to familiarise ourselves with Laravel."
+    },
+    "osolsound": {
+      "title": "O-Sol-Sound",
+      "description": "This website was created in 36 hours by a group of seven students (three studying for a Bachelor's degree in Computer Science and four studying for a Bachelor's degree in Multimedia and Internet Professions). The project reproduces conditions similar to those found in the professional world: collaboration between unfamiliar teams, respect for specifications, management of different working methods (including CSS integration) and integration of an imposed musical constraint, bossa nova."
     }
   },
   "ui": {

@@ -3,7 +3,6 @@ import { ref, computed } from 'vue'
 import projects from '../data/projects.json'
 import ProjectCard from '../components/projects/ProjectCard.vue'
 import ProjectFilter from '../components/projects/ProjectFilter.vue'
-import skills from '../data/skills.json'
 
 const selectedTech = ref('')
 
@@ -31,7 +30,9 @@ const filteredProjects = computed(() => {
     />
 
     <!-- Grille des projets -->
-    <div class="max-w-7xl px-5 mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="max-w-8xl px-5 mx-10 gap-8
+                grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2
+                lg:grid-cols-3 xl:grid-cols-4">
       <ProjectCard
         v-for="p in filteredProjects"
         :key="p.id"
