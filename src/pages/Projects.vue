@@ -3,6 +3,7 @@ import { ref, computed } from 'vue'
 import projects from '../data/projects.json'
 import ProjectCard from '../components/projects/ProjectCard.vue'
 import ProjectFilter from '../components/projects/ProjectFilter.vue'
+import skills from '../data/skills.json'
 
 const selectedTech = ref('')
 

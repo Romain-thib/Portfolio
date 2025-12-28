@@ -35,7 +35,12 @@ const cvLabel = computed(() =>
       <div class="text-center mb-12">
         <a 
           :href="`mailto:${email}`" 
-          class="inline-flex items-center gap-3 p-5 rounded-lg text-2xl font-semibold text-stone-50 bg-emerald-600 hover:text-stone-100-300 dark:text-stone-50 dark:hover:text-stone-100-300 transition-colors"
+          class="inline-flex items-center px-8 py-3 text-2xl border gap-2
+                    dark:border-emerald-600 bg-emerald-600 hover:bg-emerald-800
+                   dark:hover:border-emerald-800
+                   text-white font-semibold rounded-lg cursor-pointer
+                   transition transform hover:scale-102
+                    "
         >
           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -48,7 +53,7 @@ const cvLabel = computed(() =>
           <a 
             :href="cvUrl" 
             download
-            class="inline-flex items-center gap-3 text-xl font-semibold text-slate-700 dark:text-slate-300 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors"
+            class="inline-flex items-center gap-3 text-xl font-semibold text-slate-700 dark:text-slate-300 hover:text-emerald-800 dark:hover:text-emerald-800 transition-colors"
           >
             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
