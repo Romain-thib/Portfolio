@@ -27,10 +27,12 @@ import {
     <div>
       <button
             @click="router.push('/contact')"
-            class="mt-15 px-8 py-3 bg-transparent border-2 border-zinc-700 dark:border-emerald-500
-                   text-zinc-700 dark:text-emerald-500 font-semibold rounded-lg cursor-pointer
-                   hover:bg-zinc-700 hover:text-white dark:hover:bg-emerald-800 dark:hover:text-white
-                   transition transform hover:scale-105
+            class="mt-15 px-8 py-3 bg-emerald-600 hover:bg-emerald-800
+                   border dark:border-emerald-600 dark:hover:border-emerald-800
+                   hover:border-emerald-800 
+                   text-white dark:hover:bg-emerald-800
+                   font-semibold rounded-lg cursor-pointer
+                   transition transform hover:scale-102
                    flex items-center gap-2 mx-auto"
           >
             {{ $t('home.projects.view_all') }}

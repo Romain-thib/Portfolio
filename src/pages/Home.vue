@@ -63,7 +63,7 @@ const keySkills = computed(() => {
 
       <div class="relative z-10 text-center px-6 max-w-7xl mx-auto">
         <h1 class="text-6xl md:text-7xl lg:text-9xl font-bold mb-6
-                   text-zinc-800 dark:text-emerald-400">
+                   text-zinc-800 dark:text-emerald-600">
           Romain
         </h1>
         
@@ -84,9 +84,11 @@ const keySkills = computed(() => {
         <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <button
             @click="router.push('/about')"
-            class="px-8 py-3 bg-emerald-500 hover:bg-emerald-800 
+            class="px-8 py-3 bg-emerald-600 hover:bg-emerald-800
+                   border dark:border-emerald-600
+                   dark:hover:border-emerald-800
                    text-white font-semibold rounded-lg cursor-pointer
-                   transition transform hover:scale-105
+                   transition transform hover:scale-102
                    flex items-center gap-2"
           >
             {{ $t('home.me.cta_projects') }}
@@ -95,10 +97,9 @@ const keySkills = computed(() => {
           
           <button
             @click="router.push('/contact')"
-            class="px-8 py-3 bg-transparent border-2 border-zinc-700 dark:border-emerald-500
-                   text-zinc-700 dark:text-emerald-500 font-semibold rounded-lg cursor-pointer
-                   hover:bg-zinc-700 hover:text-white dark:hover:bg-emerald-800 dark:hover:text-white
-                   transition transform hover:scale-105
+            class="px-8 py-3 bg-transparent border border-emerald-800 dark:hover:bg-emerald-800
+                   text-emerald-600 font-semibold hover:text-white hover:bg-emerald-800
+                   transition transform hover:scale-102 rounded-lg cursor-pointer
                    flex items-center gap-2"
           >
             <EnvelopeIcon class="w-5 h-5" />

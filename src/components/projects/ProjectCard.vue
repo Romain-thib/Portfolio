@@ -17,7 +17,8 @@ defineProps({
     class="bg-slate-100 bg-linear-to-br dark:from-slate-900 dark:to-slate-800
            border-emerald-600 dark:border-emerald-900 border-2
            rounded-xl shadow-sm hover:shadow-lg
-           p-6 flex flex-col gap-6 transition-shadow"
+           p-6 flex flex-col gap-6
+           transition transform hover:scale-103"
   >
     <h3 class="text-2xl font-semibold text-zinc-800 dark:text-slate-100 text-center">
       {{ t(project.titleKey) }}
