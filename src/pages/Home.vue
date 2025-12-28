@@ -61,17 +61,21 @@ const keySkills = computed(() => {
         </div>
       </div>
 
-      <div class="relative z-10 text-center px-6 max-w-5xl mx-auto">
-        <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-6
+      <div class="relative z-10 text-center px-6 max-w-7xl mx-auto">
+        <h1 class="text-6xl md:text-7xl lg:text-9xl font-bold mb-6
                    text-zinc-800 dark:text-emerald-400">
           Romain
         </h1>
         
+        <span class="relative text-2xl md:text-4xl lg:text-5xl inline-block 
+                    before:absolute before:-inset-3 before:block before:-skew-y-5
+                    before:bg-emerald-600 mt-5 mb-13 md:mt-8 before:rounded-xl">
 
-
-        <span class="relative text-2xl md:text-3xl inline-block before:absolute before:-inset-2 before:block before:-skew-y-4 before:bg-emerald-500 m-10">
-          <span class="relative text-white"> {{ $t('home.me.role') }}</span>  
+          <span class="relative text-white -skew-y-5 inline-block">
+            {{ $t('home.me.role') }}
+          </span>
         </span>
+
         
         <p class="text-lg md:text-xl mb-10 text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
           {{ $t('home.me.tagline') }}
