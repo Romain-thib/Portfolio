@@ -21,7 +21,7 @@ const filteredProjects = computed(() => {
 
 <template>
   <section class="py-10 mt-20">
-    <h2 class="text-5xl font-semibold tracking-tight mb-10 text-zinc-800 dark:text-gray-100 text-center">Tous mes projets</h2>
+    <h2 class="text-5xl font-semibold tracking-tight mb-10 text-zinc-800 dark:text-gray-100 text-center">{{ $t("project.title") }}</h2>
 
     <!-- Filtre par technologie -->
     <ProjectFilter

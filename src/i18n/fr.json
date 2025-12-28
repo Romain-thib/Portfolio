@@ -5,16 +5,16 @@
       "description": "Ce projet, développé en JavaFX, consistait à reproduire le jeu Bomberman selon un cahier des charges précis. Le programme intègre différentes fonctionnalités : gestion des collisions, inventaire des bombes, système de points de vie et interface dynamique."
     },
     "artPourVivre": {
-      "title": "Site Web Art pour Vivre",
+      "title": "Art pour Vivre",
       "description": "Ce site a été conçu en HTML et CSS dans le cadre d'un projet universitaire réalisé en équipe de trois. L'objectif était de développer un site vitrine pour une entreprise fictive du secteur événementiel. Nous avons imaginé \"Art pour Vivre\", une société spécialisée dans l'organisation d'expositions artistiques à travers la France."
     },
     "l-o-rhone": {
-      "title": "Application L’Ô Rhône",
+      "title": "L’Ô Rhône",
       "description": "Réalisée en binôme, cette application JavaFX permet la gestion des données d’une station de traitement d’eau. Elle offre la possibilité de gérer les clients, leurs commandes et les informations associées. Ce projet m’a permis de renforcer mes compétences en conception d’interfaces et en structuration de données."
     },
     "lens-symphony-web": {
-      "title": "Site Web LensSymphony",
-      "description": "Réalisée en binôme, cette application JavaFX permet la gestion des données d’une station de traitement d’eau. Elle offre la possibilité de gérer les clients, leurs commandes et les informations associées. Ce projet m’a permis de renforcer mes compétences en conception d’interfaces et en structuration de données."
+      "title": "LensSymphony",
+      "description": "Conçu en trinôme, ce site web met en avant notre application développée en Java (à retrouver dans la section Projets). Il se distingue par sa capacité à lire et exploiter les fichiers XML générés par l’application. Le site intègre un CRUD complet ainsi que la gestion des relations entre les partitions et leurs arrangements, mais aussi l'avatar pour un utilisateur par exemple."
     },
     "2048": {
       "title": "2048",
@@ -71,6 +71,10 @@
       "diploma": "Bachelor Universitaire de Technologie",
       "subtitle": "Conception et réalisation d'applications"
     }
+  },
+  "project":{
+    "title": "Tous mes projets",
+    "messageLink": "Lien vers le dépôt GitHub"
   },
   "contact": {
     "title": "Contactez-moi",
