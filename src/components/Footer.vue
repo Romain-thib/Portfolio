@@ -11,15 +11,14 @@
            border-t border-slate-700
            text-zinc-800 dark:text-slate-400"
   >
-    <!-- Liens sociaux -->
     <div class="flex justify-center gap-8 mb-4">
       <a 
         :href="githubUrl" 
         target="_blank"
         rel="noopener noreferrer"
-        class="group flex flex-col items-center gap-2 text-slate-700 dark:text-slate-300 hover:text-zinc-900 dark:hover:text-white transition-all"
+        class="group flex flex-col items-center gap-2 text-slate-800 dark:text-slate-300 hover:text-zinc-900 dark:hover:text-white transition-all"
       >
-        <div class="p-2 rounded-full shadow-md group-hover:shadow-xl group-hover:scale-110 transition-all">
+        <div class="p-3 rounded-full shadow-md group-hover:shadow-xl group-hover:scale-110 transition-all">
           <img 
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" 
             alt="GitHub"
@@ -33,7 +32,7 @@
         :href="linkedinUrl" 
         target="_blank"
         rel="noopener noreferrer"
-        class="group flex flex-col items-center gap-2 text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-all"
+        class="group flex flex-col items-center gap-2 text-slate-800 dark:text-slate-300 hover:text-zinc-900 transition-all"
       >
         <div class="p-3 rounded-full shadow-md group-hover:shadow-xl group-hover:scale-110 transition-all">
           <img 
@@ -46,7 +45,6 @@
       </a>
     </div>
 
-    <!-- Texte -->
     <p class="text-sm">
       © {{ new Date().getFullYear() }} Romain — {{ $t('ui.footer_text') }}
     </p>
