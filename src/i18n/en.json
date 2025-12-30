@@ -52,7 +52,7 @@
     "title": "About me",
     "description1": "Hi, I'm Romain, I'm 19 years old. I'm currently a second-year Computer Science student at the IUT of Lens. I'm looking for an internship starting from April 13th, in the field of web development or application development.",
     "description2": "Alongside my studies, I’m passionate about several activities that help me grow both personally and professionally. I play table tennis in a team, a sport that has taught me mutual support, working together toward a common goal, and progressing individually at the same time. I also play chess (online), a discipline that strengthens my concentration, my ability to calculate several moves ahead, and to consider multiple possibilities instead of getting stuck on a single scenario.",
-    "description3": "I also enjoy reading, especially novels; I even recommend “Demain dès l’aube” by Romain Gary, a book that left a strong impression on me. Finally, I’m a loyal supporter of the Racing Club de Lens: I love the idea of supporting the team and its players no matter what, through difficult moments as well as moments of glory."
+    "description3": "I also enjoy reading, especially novels; I even recommend “La promesse de l’aube” by Romain Gary, a book that left a strong impression on me. Finally, I’m a loyal supporter of the Racing Club de Lens: I love the idea of supporting the team and its players no matter what, through difficult moments as well as moments of glory."
   },
   "home-presentation": {
     "title": "Hi, my name is Romain",
@@ -78,7 +78,8 @@
   },
   "project":{
     "title": "All my projects",
-    "messageLink": "Link to GitHub repository"
+    "messageLink": "Link to GitHub repository",
+    "placeHolder": "Search a technology"
   },
   "contact": {
     "title": "Contact Me",

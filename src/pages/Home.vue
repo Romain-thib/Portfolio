@@ -30,7 +30,7 @@ const keySkills = computed(() => {
 
 <template>
   <section class="relative min-h-[85vh] flex items-center justify-center overflow-hidden
-                    bg-linear-to-br from-stone-50 to-stone-200 
+                    bg-linear-to-br from-stone-400 to-stone-50 
                     dark:from-slate-900 dark:to-slate-800 mt-15">
       
       <div class="absolute inset-0 pointer-events-none">
@@ -85,8 +85,8 @@ const keySkills = computed(() => {
           <button
             @click="router.push('/about')"
             class="px-8 py-3 bg-emerald-600 hover:bg-emerald-800
-                   border dark:border-emerald-600
-                   dark:hover:border-emerald-800
+                   border border-emerald-600
+                   hover:border-emerald-800
                    text-white font-semibold rounded-lg cursor-pointer
                    transition transform hover:scale-102
                    flex items-center gap-2"
@@ -109,7 +109,7 @@ const keySkills = computed(() => {
       </div>
     </section>
 
-    <section class="py-20 bg-linear-to-r from-emerald-500 to-emerald-600 dark:from-emerald-600 dark:to-emerald-700">
+    <section class="py-20 bg-linear-to-r bg-emerald-600">
       <div class="max-w-4xl mx-auto px-6 text-center">
         <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white">
           {{ $t('home.skills.title') }}
@@ -123,7 +123,7 @@ const keySkills = computed(() => {
           <div
             v-for="skill in keySkills"
             :key="skill.name"
-            class="p-6 bg-white dark:bg-slate-800 rounded-xl
+            class="p-6 bg-stone-200 dark:bg-slate-800 rounded-xl
                    border border-stone-200 dark:border-slate-700
                    hover:shadow-lg hover:scale-105 transition-all
                    text-center group"

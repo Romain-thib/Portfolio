@@ -1,5 +1,9 @@
 <script setup>
 import { ref, computed } from 'vue'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
+
 
 const props = defineProps({
   projects: {
@@ -84,12 +88,12 @@ const handleBlur = () => {
             @input="handleInput"
             @focus="handleFocus"
             @blur="handleBlur"
-            placeholder="Rechercher une technologie..."
+            :placeholder="t('project.placeHolder')"
             class="bg-stone-50 dark:bg-slate-800
-                   border border-stone-200 dark:border-slate-700
+                   border border-emerald-600 dark:border-slate-700
                    text-zinc-800 dark:text-slate-100
                    rounded-lg px-4 py-2 min-w-62.5
-                   focus:outline-none focus:ring-1 focus:ring-emerald-400
+                   focus:outline-none focus:ring-1 focus:ring-emerald-600
                    placeholder:text-zinc-400 dark:placeholder:text-slate-500"
           />
           

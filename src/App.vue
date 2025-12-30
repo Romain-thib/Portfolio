@@ -4,7 +4,7 @@ import Footer from './components/Footer.vue'
 </script>
 
 <template>
-  <div class="min-h-screen flex flex-col bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100" style="font-family: 'Inter', sans-serif">
+  <div class="min-h-screen flex flex-col bg-stone-200 dark:bg-slate-900 text-slate-900 dark:text-slate-100" style="font-family: 'Inter', sans-serif">
     <Navbar />
 
     <main class="flex-1">

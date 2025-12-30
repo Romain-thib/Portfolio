@@ -29,8 +29,8 @@ function navigateAndClose(path) {
 </script>
 
 <template>
-  <nav class="fixed top-0 left-0 z-50 w-full px-6 py-4 bg-stone-200
-             dark:bg-slate-800 border-b border-stone-300 dark:border-slate-700"
+  <nav class="fixed top-0 left-0 z-50 w-full px-6 py-4 bg-stone-300
+             dark:bg-slate-900 border-b border-stone-700"
   >
     <div class="flex items-center justify-between">
       <div

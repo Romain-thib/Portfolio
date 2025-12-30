@@ -14,7 +14,7 @@ defineProps({
 
 <template>
   <div
-  class="bg-slate-100 bg-linear-to-br dark:from-slate-900 dark:to-slate-800
+  class="from-stone-300 to-stone-50  bg-linear-to-br dark:from-slate-900 dark:to-slate-800
          border-emerald-600 dark:border-emerald-900 border-2
          rounded-xl shadow-sm hover:shadow-lg
          p-6 flex flex-col gap-6
@@ -38,7 +38,7 @@ defineProps({
         <img 
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" 
           alt="Lien vers le dépôt gitHub"
-          class="w-15 h-auto invert brightness-0"
+          class="w-12 h-auto invert brightness-0"
         />
       </div>
     </a>

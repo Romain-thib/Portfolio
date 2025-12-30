@@ -52,7 +52,7 @@
     "title": "À propos de moi",
     "description1": "Salut, moi c'est Romain, j'ai 19 ans. Actuellement étudiant en deuxième année de BUT Informatique à l'IUT de Lens. Je recherche actuellement un stage à partir du 13 avril, dans le domaine du développement web ou du développement d'applications.",
     "description2": "En parallèle de mes études, je suis passionné par plusieurs activités qui m’aident à progresser autant sur le plan personnel que professionnel. Je pratique le tennis de table en équipe, un sport qui m’a appris à m’entraider avec mes coéquipiers pour atteindre un objectif commun tout en continuant à progresser individuellement. Je joue également aux échecs (en ligne), une discipline qui développe ma concentration, ma capacité à calculer plusieurs coups à l’avance et à envisager différentes solutions plutôt que de rester bloqué sur un seul scénario.",
-    "description3": "J’apprécie aussi la lecture, notamment les romans; je recommande d’ailleurs “Demain dès l’aube” de Romain Gary, une œuvre qui m’a marqué. Enfin, je suis un supporter fidèle du Racing Club de Lens : j’aime l’idée de soutenir son équipe et ses joueurs quoi qu’il arrive, dans le malheur comme dans la gloire."
+    "description3": "J’apprécie aussi la lecture, notamment les romans; je recommande d’ailleurs “La promesse de l’aube” de Romain Gary, une œuvre qui m’a marqué. Enfin, je suis un supporter fidèle du Racing Club de Lens : j’aime l’idée de soutenir son équipe et ses joueurs quoi qu’il arrive, dans le malheur comme dans la gloire."
   },
   "timeline": {
      "title": "Mon parcours",
@@ -74,7 +74,8 @@
   },
   "project":{
     "title": "Tous mes projets",
-    "messageLink": "Lien vers le dépôt GitHub"
+    "messageLink": "Lien vers le dépôt GitHub",
+    "placeHolder": "Rechercher une technologie"
   },
   "contact": {
     "title": "Contactez-moi",

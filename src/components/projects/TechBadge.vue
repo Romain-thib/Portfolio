@@ -28,7 +28,7 @@ const techName = computed(() => skill.value?.name || props.tech)
 
 <template>
   <li
-    class="bg-stone-100 dark:bg-slate-700
+    class="bg-stone-200 dark:bg-slate-800
            text-zinc-700 dark:text-slate-200
            text-xs px-3 py-1 rounded-full
            flex items-center gap-2
