@@ -26,7 +26,7 @@ const cvLabel = computed(() =>
         {{ $t("contact.title") }}
       </h2>
 
-      <div class="pl-6 py-4 bg-stone-50 dark:bg-slate-900 rounded-r-xl mb-8">
+      <div class="pl-6 py-4 rounded-r-xl mb-8">
         <p class="text-slate-700 dark:text-slate-300 leading-relaxed text-center text-lg">
           {{ $t("contact.description") }}
         </p>
@@ -36,8 +36,8 @@ const cvLabel = computed(() =>
         <a 
           :href="`mailto:${email}`" 
           class="inline-flex items-center px-8 py-3 text-2xl border gap-2
-                    dark:border-emerald-600 bg-emerald-600 hover:bg-emerald-800
-                   dark:hover:border-emerald-800
+                  border-emerald-600 bg-emerald-600 hover:bg-emerald-800
+                   hover:border-emerald-800
                    text-white font-semibold rounded-lg cursor-pointer
                    transition transform hover:scale-102
                     "
@@ -49,7 +49,7 @@ const cvLabel = computed(() =>
         </a>
       </div>
 
-      <div class="pl-6 bg-stone-50 dark:bg-slate-900 rounded-r-xl text-center">
+      <div class="pl-6 rounded-r-xl text-center">
           <a 
             :href="cvUrl" 
             download
@@ -62,7 +62,7 @@ const cvLabel = computed(() =>
           </a>
      </div>
 
-      <div class="pl-6 py-6 bg-stone-50 dark:bg-slate-900 rounded-r-xl">
+      <div class="pl-6 py-6 rounded-r-xl">
         <p class="text-slate-700 dark:text-slate-300 text-center mb-6 text-lg">
           {{ $t("contact.socialMedia") }}
         </p>
@@ -74,7 +74,7 @@ const cvLabel = computed(() =>
             rel="noopener noreferrer"
             class="group flex flex-col items-center gap-2 text-slate-700 dark:text-slate-300 hover:text-zinc-900 dark:hover:text-white transition-all"
           >
-            <div class="p-2 bg-white dark:bg-slate-800 rounded-full shadow-md group-hover:shadow-xl group-hover:scale-110 transition-all">
+            <div class="p-2 rounded-full shadow-md group-hover:shadow-xl group-hover:scale-110 transition-all">
               <img 
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" 
                 alt="GitHub"
@@ -90,7 +90,7 @@ const cvLabel = computed(() =>
             rel="noopener noreferrer"
             class="group flex flex-col items-center gap-2 text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-all"
           >
-            <div class="p-3 bg-white dark:bg-slate-800 rounded-full shadow-md group-hover:shadow-xl group-hover:scale-110 transition-all">
+            <div class="p-3 rounded-full shadow-md group-hover:shadow-xl group-hover:scale-110 transition-all">
               <img 
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
                 alt="GitHub"

@@ -74,6 +74,7 @@
   },
   "project":{
     "title": "Tous mes projets",
+    "home": "Mes projets",
     "messageLink": "Lien vers le dépôt GitHub",
     "placeHolder": "Rechercher une technologie"
   },

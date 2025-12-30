@@ -1,7 +1,9 @@
 <script setup>
 import projects from '../../data/projects.json'
 import ProjectCard from './ProjectCard.vue'
+import { useI18n } from 'vue-i18n'
 
+const { t } = useI18n()
 const featured = projects.slice(0, 3)
 
 import { 
@@ -13,7 +15,7 @@ import {
 <template>
   <section class="py-16  dark:bg-slate-900 mx-5">
     <h2 class="text-5xl md:text-5xl lg:text-6xl font-bold mb-6 text-zinc-800 dark:text-gray-100 text-center pb-10">
-      Mes projets
+      {{ $t('project.home') }}
     </h2>
 
     <div class="max-w-7xl mx-auto">

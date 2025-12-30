@@ -12,19 +12,19 @@
         </h2>
 
         <div class="w-full max-w-3xl space-y-4">
-          <div class="border-l-4 border-emerald-400 dark:border-emerald-600 pl-6 py-4 bg-stone-50 dark:bg-slate-900 rounded-r-xl">
+          <div class="border-l-4 border-emerald-600 pl-6 py-4  rounded-r-xl">
             <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
               {{ $t("presentation.description1") }}
             </p>
           </div>
               
-          <div class="border-l-4  pl-6 py-4 bg-stone-50 dark:bg-slate-900 rounded-r-xl">
+          <div class="border-l-4  pl-6 py-4 rounded-r-xl">
             <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
               {{ $t("presentation.description2") }}
             </p>
           </div>
           
-          <div class="border-l-4 border-emerald-400 dark:border-emerald-600 pl-6 py-4 bg-stone-50 dark:bg-slate-900 rounded-r-xl">
+          <div class="border-l-4 border-emerald-600 pl-6 py-4 rounded-r-xl">
             <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
               {{ $t("presentation.description3") }}
             </p>
@@ -32,7 +32,7 @@
         </div>
       </div>
 
-      <div class="mx-10 mt-15 flex flex-col items-center justify-start 2xl:ml-[0%] mr-10 lg:mt-0 lg:border-l lg:border-slate-300 dark:lg:border-emerald-400 lg:pl-12">
+      <div class="mx-10 mt-15 flex flex-col items-center justify-start 2xl:ml-[0%] mr-10 lg:mt-0 lg:border-l  lg:border-emerald-600 lg:pl-12">
         <Timeline>
         </Timeline>
       </div>
