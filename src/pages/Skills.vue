@@ -2,26 +2,30 @@
 import { useI18n } from 'vue-i18n'
 import SkillsCard from '../components/skills/SkillsCard.vue'
 import skills from '../data/skills.json'
+import { computed } from 'vue'
 
 const { t } = useI18n()
 
-// Ordre explicite des catégories
+// Ordre explicite des catégories (avec les clés)
 const categoriesOrder = [
-  'Développement Web',
-  'Frameworks',
-  "Développement d'application",
-  'Langages de programmation',
-  'Bases de données',
-  'Outils',
-  'Versionning et travail collaboratif',
-  'IDEs'
+  'web',
+  'frameworks',
+  'app',
+  'prog',
+  'data',
+  'tools',
+  'git',
+  'ide'
 ]
 
 // Regrouper les skills par catégorie
-const groupedSkills = categoriesOrder.map(category => ({
-  category,
-  techs: skills.filter(tech => tech.category === category)
-})).filter(group => group.techs.length > 0)
+const groupedSkills = computed(() =>
+  categoriesOrder.map(categoryKey => ({
+      categoryKey,
+      categoryLabel: t(`skills.${categoryKey}`),
+      techs: skills.filter(tech => tech.category === categoryKey) 
+  })).filter(group => group.techs.length > 0) 
+)
 </script>
 
 <template>
@@ -39,12 +43,12 @@ const groupedSkills = categoriesOrder.map(category => ({
 
       <section
         v-for="group in groupedSkills"
-        :key="group.category"
+        :key="group.categoryKey"
         class="mb-16 last:mb-0"
       >
         <div class="flex items-center gap-4 mb-8">
           <h2 class="text-xl font-bold uppercase tracking-[0.2em] text-slate-800 dark:text-emerald-500 whitespace-nowrap">
-            {{ group.category }}
+            {{ group.categoryLabel }}
           </h2>
           <div class="w-full h-px bg-stone-300 dark:bg-slate-800 transition-colors duration-500"></div>
         </div>

@@ -88,6 +88,16 @@
     "socialMedia": "Find me on social media",
     "message": "Send me a message"
   },
+  "skills": {
+    "web": "Web Development",
+    "frameworks": "Frameworks",
+    "app": "Application Development",
+    "prog": "Programming Languages",
+    "data": "Databases",
+    "tools": "Tools",
+    "git": "Versioning and Collaborative Work",
+    "ide": "IDEs"
+  },
   "home": {
     "me": {
       "role": "Developer",

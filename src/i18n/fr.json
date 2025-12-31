@@ -84,6 +84,16 @@
     "socialMedia": "Retrouvez-moi sur les réseaux sociaux",
     "message": "Envoyez-moi un message"
   },
+  "skills": {
+    "web": "Développement Web",
+    "frameworks": "Frameworks",
+    "app": "Développement d'application",
+    "prog": "Langages de programmation",
+    "data": "Bases de données",
+    "tools": "Outils",
+    "git": "Versionning et travail collaboratif",
+    "ide": "IDEs"
+  },
   "home": {
     "me": {
       "role": "Développeur",
