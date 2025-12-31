@@ -44,16 +44,49 @@ function navigateAndClose(path) {
       </div>
 
       <div class="hidden md:flex items-center gap-8">
-        <router-link
-          v-for="link in ['home', 'projects', 'skills', 'about', 'contact']"
-          :key="link"
-          :to="link === 'home' ? '/' : `/${link}`"
-          class="text-sm font-bold uppercase tracking-widest text-slate-600 dark:text-slate-400 
+        <div class="hidden md:flex items-center gap-8 text-sm font-bold uppercase tracking-widest text-slate-900 dark:text-slate-300 
                  hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors"
-          active-class="text-emerald-600 dark:text-emerald-400"
-        >
-          {{ $t(`ui.${link}`) }}
-        </router-link>
+            active-class="text-emerald-600 dark:text-emerald-400">
+          <router-link
+            to="/"
+            class="text-zinc-700 dark:text-slate-200
+                  hover:text-zinc-900 dark:hover:text-emerald-700 transition"
+          >
+            {{ $t('ui.home') }}
+          </router-link>
+
+          <router-link
+            to="/projects"
+            class="text-slate-700 dark:text-slate-200
+                  hover:text-zinc-900 dark:hover:text-emerald-700 transition"
+          >
+            {{ $t('ui.projects') }}
+          </router-link>
+
+          <router-link
+            to="/skills"
+            class="text-slate-700 dark:text-slate-200
+                  hover:text-zinc-900 dark:hover:text-emerald-700 transition"
+          >
+            {{ $t('ui.skills') }}
+          </router-link>
+
+          <router-link
+            to="/about"
+            class="text-zinc-700 dark:text-slate-200
+                  hover:text-zinc-900 dark:hover:text-emerald-700 transition"
+          >
+            {{ $t('ui.about') }}
+          </router-link>
+
+          <router-link
+            to="/contact"
+            class="text-zinc-700 dark:text-slate-200
+                  hover:text-zinc-900 dark:hover:text-emerald-700 transition"
+          >
+            {{ $t('ui.contact') }}
+          </router-link>
+        </div>
 
         <div class="h-6 w-px bg-stone-300 dark:border-slate-800"></div>
 
