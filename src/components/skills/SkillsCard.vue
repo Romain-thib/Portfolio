@@ -13,10 +13,10 @@ const defaultLogo = '/images/default-skill.svg'
   <li class="group list-none">
     <div 
       class="h-full p-6 rounded-2xl flex flex-col items-center justify-center gap-4
-             bg-white dark:bg-slate-800/40
+             bg-white dark:bg-slate-800/80
              border border-stone-300 dark:border-slate-800
              transition-all duration-500 ease-out
-             hover:bg-emerald-50 dark:hover:bg-emerald-900/20 
+             hover:bg-emerald-50 dark:hover:bg-emerald-900/40 
              hover:border-emerald-500/50 hover:shadow-xl hover:shadow-emerald-500/10 hover:-translate-y-2"
     >
       <div class="w-12 h-12 flex items-center justify-center">
