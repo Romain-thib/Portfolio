@@ -124,10 +124,7 @@ const keySkills = computed(() => {
             <div class="w-20 h-2 bg-white rounded-full"></div>
           </div>
         </div>
-
-        
-        
-        
+       
         <p class="text-lg md:text-xl mb-8 text-emerald-50">
           {{ $t('home.skills.subtitle') }}
         </p>
