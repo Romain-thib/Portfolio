@@ -31,7 +31,7 @@ function navigateAndClose(path) {
 <template>
   <nav class="fixed top-0 left-0 z-50 w-full px-6 py-4 
              bg-stone-200/80 dark:bg-slate-900/80 backdrop-blur-md
-             border-b border-stone-300 dark:border-slate-800">
+             border-b border-stone-500 dark:border-slate-800">
     <div class="max-w-7xl mx-auto flex items-center justify-between">
       
       <div

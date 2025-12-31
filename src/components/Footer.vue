@@ -8,7 +8,7 @@
   <footer
     class="w-full py-14 mt-auto
            bg-stone-200 dark:bg-slate-900
-           border-t border-stone-300 dark:border-slate-800"
+           border-t border-stone-500 dark:border-slate-800"
   >
     <div class="max-w-7xl mx-auto px-6 flex flex-col items-center">
       
