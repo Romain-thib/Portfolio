@@ -1,0 +1,112 @@
+[
+  {
+    "name": "HTML",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+    "category": "web"
+  },
+  {
+    "name": "CSS",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+    "category": "web"
+  },
+  {
+    "name": "Tailwind CSS",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+    "category": "web"
+  },
+  {
+    "name": "Vue.js",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
+    "category": "frameworks"
+  },
+  {
+    "name": "Laravel",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg",
+    "category": "frameworks"
+  },
+  {
+    "name": "Flask",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg",
+    "category": "frameworks"
+  },
+  {
+    "name": "JavaFX",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+    "category": "app"
+  },
+  {
+    "name": "Java",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+    "category": "prog"
+  },
+  {
+    "name": "Python",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+    "category": "prog"
+  },
+  {
+    "name": "PHP",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
+    "category": "prog"
+  },
+  {
+    "name": "Bash",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg",
+    "category": "prog"
+  },
+  {
+    "name": "SQLite",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg",
+    "category": "data"
+  },
+  {
+    "name": "PostgreSQL",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+    "category": "data"
+  },
+  {
+    "name": "MCD / MLD",
+    "logo": "images/mcd-mld.svg",
+    "category": "data"
+  },
+  {
+    "name": "Git",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+    "category": "git"
+  },
+  {
+    "name": "GitHub",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+    "category": "git"
+  },
+  {
+    "name": "GitLab",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg",
+    "category": "git"
+  },
+  {
+    "name": "Node.js",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+    "category": "tools"
+  },
+  {
+    "name": "Vite",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg",
+    "category": "tools"
+  },
+  {
+    "name": "JetBrains",
+    "logo": "https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.svg",
+    "category": "ide"
+  },
+  {
+    "name": "Eclipse",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eclipse/eclipse-original.svg",
+    "category": "ide"
+  },
+  {
+    "name": "VS Code",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
+    "category": "ide"
+  }
+]

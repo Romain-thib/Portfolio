@@ -1,0 +1,172 @@
+<script setup>
+import { useRouter } from 'vue-router'
+import { computed } from 'vue'
+import skills from '../data/skills.json'
+import ThirdProject from '../components/projects/ThirdProject.vue'
+import RaquetteAnimation from '../components/images/RaquetteAnimation.vue'
+import BallonFoot from '../components/images/BallonFoot.vue'
+import Livre from '../components/images/Livre.vue'
+import Pion from '../components/images/Pion.vue'
+import { 
+  EnvelopeIcon,
+  ArrowRightIcon 
+} from '@heroicons/vue/24/outline'
+
+const router = useRouter()
+
+const keySkills = computed(() => {
+  const selectedSkills = [
+    'Java',
+    'Laravel', 
+    'HTML',
+    'PostgreSQL',
+    'Git',
+    'Tailwind CSS'
+  ]
+  
+  return skills.filter(skill => selectedSkills.includes(skill.name))
+})
+</script>
+
+<template>
+  <section class="relative min-h-[85vh] flex items-center justify-center overflow-hidden
+                 bg-linear-to-br from-stone-200 to-stone-100 
+                 dark:from-slate-900 dark:to-slate-950 mt-15
+                 transition-colors duration-500">
+      
+      <div class="absolute inset-0 pointer-events-none">
+        <div class="right-2/30 ml-5 top-7 opacity-100 absolute  rotate-280
+                  w-23 sm:w-28 md:w-30 lg:w-30 xl:w-40
+                  -mt-13 sm:-mt-10 md:-mt-11 lg:-mt-11 xl:mt-6
+                  -mr-15 sm:-mr-13 md:-mr-10 lg:-mr-11 xl:-mr-10 2xl:mr-11">
+        <RaquetteAnimation />
+        </div>
+
+        <div class="left-2/30 top-9 opacity-100 absolute 
+                    w-20 sm:w-24 md:w-28 lg:w-30 xl:w-38
+                    -mt-2 sm:-mt-2 md:-mt-5 lg:mt-0 xl:mt-10
+                    -ml-3 sm:ml-0 md:-ml-1 lg:ml-2 xl:ml-0 2xl:ml-20">
+          <BallonFoot />
+        </div>
+
+        <div class="right-2/30 bottom-9 opacity-100 absolute
+                    w-30 sm:w-30 md:w-50 lg:w-50 xl:w-70
+                    -ml-3 sm:ml-0 md:-ml-1 lg:ml-2 xl:ml-0 2xl:ml-20">
+          <Livre />
+        </div>
+
+        <div class="left-1/30 bottom-9 opacity-100 absolute -rotate-15
+                    w-30 sm:w-30 md:w-50 lg:w-50 xl:w-70
+                    -ml-3 sm:ml-0 md:-ml-1 lg:ml-2 xl:ml-0 2xl:ml-20">
+          <Pion />
+        </div>
+      </div>
+
+      <div class="relative z-10 text-center px-6 max-w-7xl mx-auto">
+        <div
+          class="group text-6xl md:text-7xl lg:text-9xl mb-8 font-black tracking-tighter"
+        >
+          <span class="text-slate-900 dark:text-white transition-colors">
+            ROMAIN<span class="text-emerald-600">.</span>
+          </span>
+        </div>
+ 
+        <span class="relative text-2xl md:text-4xl lg:text-5xl inline-block 
+                    before:absolute before:-inset-3 before:block before:-skew-y-5
+                    before:bg-emerald-600 mt-5 mb-13 md:mt-8 before:rounded-xl">
+
+          <span class="relative text-white -skew-y-5 inline-block">
+            {{ $t('home.me.role') }}
+          </span>
+        </span>
+
+        
+        <p class="text-lg md:text-xl mb-10 text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+          {{ $t('home.me.tagline') }}
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <button
+            @click="router.push('/about')"
+            class="px-8 py-3 bg-emerald-600 hover:bg-emerald-800
+                   border border-emerald-600
+                   hover:border-emerald-800
+                   text-white font-semibold rounded-lg cursor-pointer
+                   transition transform hover:scale-102
+                   flex items-center gap-2"
+          >
+            {{ $t('home.me.cta_projects') }}
+            <ArrowRightIcon class="w-5 h-5" />
+          </button>
+          
+          <button
+            @click="router.push('/contact')"
+            class="px-8 py-3 bg-transparent border border-emerald-800 dark:hover:bg-emerald-800
+                   text-emerald-600 font-semibold hover:text-white hover:bg-emerald-800
+                   transition transform hover:scale-102 rounded-lg cursor-pointer
+                   flex items-center gap-2"
+          >
+            <EnvelopeIcon class="w-5 h-5" />
+            {{ $t('home.me.cta_contact') }}
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-emerald-600 transition-colors duration-500">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <div class="mb-10 text-center">
+          <div class="inline-block text-left">
+            <h2 class="text-5xl md:text-7xl font-black tracking-tighter text-white mb-4">
+              {{ $t("home.skills.title") }}<span class="text-white">.</span>
+            </h2>
+            
+            <div class="w-20 h-2 bg-white rounded-full"></div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 pt-5">
+          <div
+            v-for="skill in keySkills"
+            :key="skill.name"
+            class="p-6 bg-stone-200 dark:bg-slate-800 rounded-xl
+                   border border-stone-200 dark:border-slate-700
+                   hover:shadow-lg hover:scale-105 transition-all
+                   text-center group"
+          >
+            <img 
+              :src="skill.logo" 
+              :alt="skill.name"
+              class="w-16 h-16 mx-auto mb-4 object-contain
+                     group-hover:scale-110 transition-transform"
+            />
+            <h3 class="text-base font-semibold text-zinc-800 dark:text-slate-200">
+              {{ skill.name }}
+            </h3>
+          </div>
+        </div>
+
+        <div class="text-center mt-12">
+          <button
+            @click="router.push('/skills')"
+            class="group text-lg md:text-xl mb-8 text-emerald-50 cursor-pointer
+                  font-semibold inline-flex items-center gap-2 transition relative"
+          >
+            <span class="relative">
+              {{ $t('home.skills.view_all') }}
+              <span
+                class="absolute left-0 -bottom-1 w-0 h-0.5 bg-emerald-50
+                      transition-all duration-300 group-hover:w-full"
+              ></span>
+            </span>
+
+            <ArrowRightIcon class="w-5 h-5" />
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <ThirdProject class="z-10" />
+</template>
+
