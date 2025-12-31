@@ -30,6 +30,7 @@ defineProps({
                   opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300 
                   flex items-end p-6">
         <a 
+          v-if="project.lien"
           :href="t(project.lien)" 
           target="_blank"
           class="hidden lg:flex items-center gap-2 bg-white text-slate-900 px-4 py-2 rounded-xl font-bold text-sm transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 hover:bg-emerald-50"
@@ -47,6 +48,7 @@ defineProps({
         </h3>
         
         <a 
+          v-if="project.lien"
           :href="t(project.lien)" 
           target="_blank"
           class="lg:hidden p-2 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400"
