@@ -2,7 +2,9 @@
 import projects from '../../data/projects.json'
 import ProjectCard from './ProjectCard.vue'
 import { useI18n } from 'vue-i18n'
+import { useRouter } from 'vue-router'
 
+const router = useRouter()
 const { t } = useI18n()
 const featured = projects.slice(0, 3)
 
@@ -31,7 +33,7 @@ import {
 
     <div>
       <button
-            @click="router.push('/contact')"
+            @click="router.push('/projects')"
             class="mt-15 px-8 py-3 bg-emerald-600 hover:bg-emerald-800
                    border border-emerald-600 dark:hover:border-emerald-800
                    hover:border-emerald-800 

@@ -28,11 +28,12 @@ const techName = computed(() => skill.value?.name || props.tech)
 
 <template>
   <li
-    class="bg-stone-200 dark:bg-slate-800
-           text-zinc-700 dark:text-slate-200
-           text-xs px-3 py-1 rounded-full
-           flex items-center gap-2
-           transition hover:scale-105"
+    class="flex items-center gap-1.5 px-3 py-1 rounded-lg
+           bg-slate-100 dark:bg-slate-800/50 
+           border border-slate-200 dark:border-slate-700
+           text-slate-700 dark:text-slate-300
+           text-[11px] font-bold uppercase tracking-wider
+           transition-colors hover:border-emerald-500/50 hover:bg-emerald-50 dark:hover:bg-emerald-900/20"
   >
     <img
       v-if="techLogo"

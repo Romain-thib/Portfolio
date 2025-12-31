@@ -14,55 +14,49 @@ defineProps({
 
 <template>
   <div
-  class="from-stone-300 to-stone-50  bg-linear-to-br dark:from-slate-900 dark:to-slate-800
-         border-emerald-600 dark:border-emerald-900 border-2
-         rounded-xl shadow-sm hover:shadow-lg
-         p-6 flex flex-col gap-6
-         transition transform hover:scale-103"
->
-
-  <div class="flex items-center justify-between">
-    <h3 class="text-2xl font-semibold text-zinc-800 dark:text-slate-100">
-      {{ t(project.titleKey) }}
-    </h3>
-
-    
-    <a 
-      :href="t(project.lien)" 
-      target="_blank"
-      rel="noopener noreferrer"
-      class="group flex flex-col items-center gap-2 text-slate-700 dark:text-slate-300 hover:text-zinc-900 dark:hover:text-white transition-all"
-      :title="t('project.messageLink')"
-    >
-      <div class="rounded-full shadow-md group-hover:shadow-xl group-hover:scale-105 transition-all bg-black">
-        <img 
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" 
-          alt="Lien vers le dépôt gitHub"
-          class="w-12 h-auto invert brightness-0"
-        />
+    class="group relative flex flex-col h-full bg-white dark:bg-slate-900 
+           border border-slate-200 dark:border-slate-800
+           rounded-3xl overflow-hidden transition-all duration-500
+           hover:shadow-2xl hover:shadow-emerald-500/10 hover:-translate-y-2"
+  >
+    <div class="relative h-52 overflow-hidden">
+      <img
+        :src="project.image"
+        :alt="t(project.titleKey)"
+        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+      />
+      <div class="absolute inset-0 bg-linear-to-t from-slate-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+        <a 
+          :href="t(project.lien)" 
+          target="_blank"
+          class="flex items-center gap-2 bg-white text-slate-900 px-4 py-2 rounded-xl font-bold text-sm transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300"
+        >
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="w-4 h-4" />
+          Code Source
+        </a>
       </div>
-    </a>
-    
+    </div>
+
+    <div class="p-6 flex flex-col flex-grow">
+      <div class="flex justify-between items-start mb-3">
+        <h3 class="text-xl font-bold text-slate-800 dark:text-white group-hover:text-emerald-600 transition-colors">
+          {{ t(project.titleKey) }}
+        </h3>
+      </div>
+
+      <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6 line-clamp-3">
+        {{ t(project.descriptionKey) }}
+      </p>
+
+      <div class="mt-auto">
+        <ul class="flex flex-wrap gap-2">
+          <TechBadge 
+            v-for="tech in project.tech"
+            :key="tech"
+            :tech="tech"
+          />
+        </ul>
+      </div>
+    </div>
   </div>
-
-  <img
-    :src="project.image"
-    :alt="t(project.titleKey)"
-    class="w-full h-50 object-cover rounded-lg"
-  />
-
-  <p class="text-zinc-800 dark:text-slate-300 text-2xs leading-relaxed">
-    {{ t(project.descriptionKey) }}
-  </p>
-
-  <ul class="flex flex-wrap gap-2 mt-auto">
-    <TechBadge 
-      v-for="tech in project.tech"
-      :key="tech"
-      :tech="tech"
-    />
-  </ul>
-
-</div>
-
 </template>
