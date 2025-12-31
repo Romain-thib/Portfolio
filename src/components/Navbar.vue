@@ -29,164 +29,53 @@ function navigateAndClose(path) {
 </script>
 
 <template>
-  <nav class="fixed top-0 left-0 z-50 w-full px-6 py-4 bg-stone-300
-             dark:bg-slate-900 border-b border-stone-700"
-  >
-    <div class="flex items-center justify-between">
+  <nav class="fixed top-0 left-0 z-50 w-full px-6 py-4 
+             bg-stone-200/80 dark:bg-slate-900/80 backdrop-blur-md
+             border-b border-stone-300 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      
       <div
-        class="text-xl font-bold hover:text-zinc-800 dark:text-emerald-400 cursor-pointer"
+        class="group text-2xl font-black tracking-tighter cursor-pointer"
         @click="navigateAndClose('/')"
       >
-        <p>Romain</p>
+        <span class="text-slate-900 dark:text-white transition-colors group-hover:text-emerald-600">
+          ROMAIN<span class="text-emerald-600">.</span>
+        </span>
       </div>
 
-      <!-- Desktop Menu -->
-      <div class="hidden md:flex items-center gap-6">
+      <div class="hidden md:flex items-center gap-8">
         <router-link
-          to="/"
-          class="text-zinc-700 dark:text-slate-200
-                 hover:text-zinc-900 dark:hover:text-emerald-700 transition"
+          v-for="link in ['home', 'projects', 'skills', 'about', 'contact']"
+          :key="link"
+          :to="link === 'home' ? '/' : `/${link}`"
+          class="text-sm font-bold uppercase tracking-widest text-slate-600 dark:text-slate-400 
+                 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors"
+          active-class="text-emerald-600 dark:text-emerald-400"
         >
-          {{ $t('ui.home') }}
+          {{ $t(`ui.${link}`) }}
         </router-link>
 
-        <router-link
-          to="/projects"
-          class="text-slate-700 dark:text-slate-200
-                 hover:text-zinc-900 dark:hover:text-emerald-700 transition"
-        >
-          {{ $t('ui.projects') }}
-        </router-link>
+        <div class="h-6 w-px bg-stone-300 dark:border-slate-800"></div>
 
-        <router-link
-          to="/skills"
-          class="text-slate-700 dark:text-slate-200
-                 hover:text-zinc-900 dark:hover:text-emerald-700 transition"
-        >
-          {{ $t('ui.skills') }}
-        </router-link>
+        <div class="flex items-center gap-3">
+          <button @click="toggleLang" class="hover:scale-110 transition-transform">
+            <img :src="locale === 'fr' ? frFlag : enFlag" class="w-6 h-4 object-cover rounded-sm shadow-sm" />
+          </button>
 
-        <router-link
-          to="/about"
-          class="text-zinc-700 dark:text-slate-200
-                 hover:text-zinc-900 dark:hover:text-emerald-700 transition"
-        >
-          {{ $t('ui.about') }}
-        </router-link>
-
-        <router-link
-          to="/contact"
-          class="text-zinc-700 dark:text-slate-200
-                 hover:text-zinc-900 dark:hover:text-emerald-700 transition"
-        >
-          {{ $t('ui.contact') }}
-        </router-link>
-
-        <button
-          @click="toggleLang"
-          class="p-1 rounded dark:hover:bg-slate-600 hover:bg-stone-300"
-        >
-          <img
-            :src="locale === 'fr' ? frFlag : enFlag"
-            alt="flag"
-            class="w-6 h-5 object-cover rounded-sm"
-          />
-        </button>
-
-        <button
-          @click="ui.toggleTheme"
-          class="p-1 rounded dark:hover:bg-slate-600 hover:bg-stone-300"
-        >
-          <SunIcon v-if="ui.isDark" class="w-6 h-6 text-amber-400" />
-          <MoonIcon v-else class="w-6 h-6 text-slate-700" />
-        </button>
+          <button @click="ui.toggleTheme" class="p-2 rounded-xl hover:bg-stone-300 dark:hover:bg-slate-800 transition-colors">
+            <SunIcon v-if="ui.isDark" class="w-5 h-5 text-amber-400" />
+            <MoonIcon v-else class="w-5 h-5 text-slate-600" />
+          </button>
+        </div>
       </div>
 
-      <!-- Mobile Menu Button -->
-      <button
-        @click="toggleMenu"
-        class="md:hidden p-2 rounded dark:hover:bg-slate-600 hover:bg-stone-300"
-      >
-        <Bars3Icon v-if="!isMenuOpen" class="w-6 h-6 text-zinc-700 dark:text-slate-200" />
-        <XMarkIcon v-else class="w-6 h-6 text-zinc-700 dark:text-slate-200" />
+      <button @click="toggleMenu" class="md:hidden p-2 text-slate-900 dark:text-white">
+        <Bars3Icon v-if="!isMenuOpen" class="w-7 h-7" />
+        <XMarkIcon v-else class="w-7 h-7" />
       </button>
     </div>
 
-    <!-- Mobile Menu -->
-    <div
-      v-if="isMenuOpen"
-      class="md:hidden mt-4 pb-4 flex flex-col gap-4"
-    >
-      <router-link
-        to="/"
-        @click="isMenuOpen = false"
-        class="text-zinc-700 dark:text-slate-200
-               hover:text-zinc-900 dark:hover:text-emerald-700 transition
-               py-2 px-4 rounded hover:bg-stone-300 dark:hover:bg-slate-700"
-      >
-        {{ $t('ui.home') }}
-      </router-link>
-
-      <router-link
-        to="/projects"
-        @click="isMenuOpen = false"
-        class="text-slate-700 dark:text-slate-200
-               hover:text-zinc-900 dark:hover:text-emerald-700 transition
-               py-2 px-4 rounded hover:bg-stone-300 dark:hover:bg-slate-700"
-      >
-        {{ $t('ui.projects') }}
-      </router-link>
-
-      <router-link
-        to="/skills"
-        @click="isMenuOpen = false"
-        class="text-slate-700 dark:text-slate-200
-               hover:text-zinc-900 dark:hover:text-emerald-700 transition
-               py-2 px-4 rounded hover:bg-stone-300 dark:hover:bg-slate-700"
-      >
-        {{ $t('ui.skills') }}
-      </router-link>
-
-      <router-link
-        to="/about"
-        @click="isMenuOpen = false"
-        class="text-zinc-700 dark:text-slate-200
-               hover:text-zinc-900 dark:hover:text-emerald-700 transition
-               py-2 px-4 rounded hover:bg-stone-300 dark:hover:bg-slate-700"
-      >
-        {{ $t('ui.about') }}
-      </router-link>
-
-      <router-link
-        to="/contact"
-        @click="isMenuOpen = false"
-        class="text-zinc-700 dark:text-slate-200
-               hover:text-zinc-900 dark:hover:text-emerald-700 transition
-               py-2 px-4 rounded hover:bg-stone-300 dark:hover:bg-slate-700"
-      >
-        {{ $t('ui.contact') }}
-      </router-link>
-
-      <div class="flex items-center gap-4 px-4 pt-2 border-t border-stone-300 dark:border-slate-700">
-        <button
-          @click="toggleLang"
-          class="p-2 rounded dark:hover:bg-slate-600 hover:bg-stone-300"
-        >
-          <img
-            :src="locale === 'fr' ? frFlag : enFlag"
-            alt="flag"
-            class="w-6 h-5 object-cover rounded-sm"
-          />
-        </button>
-
-        <button
-          @click="ui.toggleTheme"
-          class="p-2 rounded dark:hover:bg-slate-600 hover:bg-stone-300"
-        >
-          <SunIcon v-if="ui.isDark" class="w-6 h-6 text-amber-400" />
-          <MoonIcon v-else class="w-6 h-6 text-slate-700" />
-        </button>
-      </div>
-    </div>
+    <div v-if="isMenuOpen" class="md:hidden absolute top-full left-0 w-full bg-stone-200 dark:bg-slate-900 border-b border-stone-300 dark:border-slate-800 p-6 flex flex-col gap-4 shadow-xl">
+       </div>
   </nav>
 </template>
