@@ -85,7 +85,8 @@
   "contact": {
     "title": "Contact Me",
     "description": "You can send me an email if you have any questions or require further information.",
-    "socialMedia": "Find me on social media"
+    "socialMedia": "Find me on social media",
+    "message": "Send me a message"
   },
   "home": {
     "me": {

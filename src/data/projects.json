@@ -4,7 +4,7 @@
     "descriptionKey": "projects.lens-symphony-web.description",
     "tech": ["PHP", "HTML", "LARAVEL", "TAILWIND CSS"],
     "image": "/images/lens_symphony.png",
-    "lien" : "fs"
+    "lien" : ""
   },
   {
     "id": "osolsound",
@@ -12,7 +12,7 @@
     "descriptionKey": "projects.osolsound.description",
     "tech": ["HTML", "CSS", "PHP"],
     "image": "/images/osolsound.png",
-    "lien": "https://github.com/Romain-thib"
+    "lien": ""
   },
   {
     "id": "bomberman",
@@ -61,7 +61,7 @@
     "descriptionKey": "projects.pacman.description",
     "tech": ["JAVA", "JavaFX"],
     "image": "/images/pacman.png",
-    "lien": "https://github.com/Romain-thib"
+    "lien": ""
   },
   {
     "id": "cinehub",
@@ -69,6 +69,6 @@
     "descriptionKey": "projects.cinehub.description",
     "tech": ["HTML", "TAILWIND CSS", "PHP"],
     "image": "/images/cinehub.png",
-    "lien": "https://github.com/Romain-thib"
+    "lien": ""
   }
 ]

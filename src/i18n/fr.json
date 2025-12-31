@@ -81,7 +81,8 @@
   "contact": {
     "title": "Contactez-moi",
     "description": "Vous pouvez m'envoyer un mail pour toute question ou information complémentaire.",
-    "socialMedia": "Retrouvez-moi sur les réseaux sociaux"
+    "socialMedia": "Retrouvez-moi sur les réseaux sociaux",
+    "message": "Envoyez-moi un message"
   },
   "home": {
     "me": {
