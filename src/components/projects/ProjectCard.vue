@@ -55,7 +55,7 @@ defineProps({
         </a>
       </div>
 
-      <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6 line-clamp-3">
+      <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6">
         {{ t(project.descriptionKey) }}
       </p>
 

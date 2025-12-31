@@ -118,18 +118,14 @@ const keySkills = computed(() => {
         <div class="mb-10 text-center">
           <div class="inline-block text-left">
             <h2 class="text-5xl md:text-7xl font-black tracking-tighter text-white mb-4">
-              {{ $t("project.title") }}<span class="text-white">.</span>
+              {{ $t("home.skills.title") }}<span class="text-white">.</span>
             </h2>
             
             <div class="w-20 h-2 bg-white rounded-full"></div>
           </div>
         </div>
-       
-        <p class="text-lg md:text-xl mb-8 text-emerald-50">
-          {{ $t('home.skills.subtitle') }}
-        </p>
 
-        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 pt-5">
           <div
             v-for="skill in keySkills"
             :key="skill.name"
