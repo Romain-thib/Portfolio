@@ -30,8 +30,9 @@ const keySkills = computed(() => {
 
 <template>
   <section class="relative min-h-[85vh] flex items-center justify-center overflow-hidden
-                    bg-linear-to-br from-stone-400 to-stone-50 
-                    dark:from-slate-900 dark:to-slate-800 mt-15">
+                 bg-linear-to-br from-stone-200 to-stone-100 
+                 dark:from-slate-900 dark:to-slate-950 mt-15
+                 transition-colors duration-500">
       
       <div class="absolute inset-0 pointer-events-none">
         <div class="right-2/30 ml-5 top-7 opacity-100 absolute  rotate-280
@@ -109,7 +110,7 @@ const keySkills = computed(() => {
       </div>
     </section>
 
-    <section class="py-20 bg-linear-to-r bg-emerald-600">
+    <section class="py-20 bg-emerald-600 transition-colors duration-500">
       <div class="max-w-4xl mx-auto px-6 text-center">
         <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white">
           {{ $t('home.skills.title') }}

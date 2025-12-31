@@ -3,43 +3,33 @@ const props = defineProps({
   tech: {
     type: Object,
     required: true
-  },
-  colorIndex: {
-    type: Number,
-    required: true
   }
 })
-
-const colorPalette = [
-  'bg-purple-100 hover:bg-purple-200',
-  'bg-cyan-100 hover:bg-cyan-200',
-  'bg-orange-100 hover:bg-orange-200',
-  'bg-green-100 hover:bg-green-200'
-]
-
-const getColor = () => {
-  return colorPalette[props.colorIndex % colorPalette.length]
-}
 
 const defaultLogo = '/images/default-skill.svg'
 </script>
 
 <template>
-  <li class="group">
+  <li class="group list-none">
     <div 
-      class="p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 min-w-35 flex flex-col items-center gap-3"
-      :class="getColor()"
+      class="h-full p-6 rounded-2xl flex flex-col items-center justify-center gap-4
+             bg-white dark:bg-slate-800/40
+             border border-stone-300 dark:border-slate-800
+             transition-all duration-500 ease-out
+             hover:bg-emerald-50 dark:hover:bg-emerald-900/20 
+             hover:border-emerald-500/50 hover:shadow-xl hover:shadow-emerald-500/10 hover:-translate-y-2"
     >
-      <div class="w-16 h-16 flex items-center justify-center">
+      <div class="w-12 h-12 flex items-center justify-center">
         <img 
           :src="tech.logo || defaultLogo" 
           :alt="tech.name"
-          class="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
+          class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
         />
       </div>
-      <div class="text-gray-800 font-semibold text-sm text-center">
+
+      <span class="text-xs font-bold uppercase tracking-widest text-slate-800 dark:text-slate-200 transition-colors group-hover:text-emerald-600 text-center leading-tight">
         {{ tech.name }}
-      </div>
+      </span>
     </div>
   </li>
 </template>

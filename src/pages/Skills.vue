@@ -25,27 +25,30 @@ const groupedSkills = categoriesOrder.map(category => ({
 </script>
 
 <template>
-  <div class="min-h-[80vh] pt-15 pb-1 mt-20">
-    <div class="container mx-auto px-4">
-      <h1 class="text-5xl font-bold mb-15 text-center">
-        {{ t('ui.skills') }}
-      </h1>
+  <div class="min-h-screen pt-15 pb-1 my-20 bg-stone-200 dark:bg-slate-900 transition-colors duration-500">
+    <div class="max-w-6xl mx-auto px-6">
+
+      <h2 class="text-5xl font-semibold tracking-tight mb-10 text-zinc-800 dark:text-gray-100 text-center">
+          {{ t('ui.skills') }}
+        </h2>
 
       <section
         v-for="group in groupedSkills"
         :key="group.category"
-        class="mb-12"
+        class="mb-16 last:mb-0"
       >
-        <h2 class="text-3xl font-semibold mb-6">
-          {{ group.category }}
-        </h2>
+        <div class="flex items-center gap-4 mb-8">
+          <h2 class="text-xl font-bold uppercase tracking-[0.2em] text-slate-800 dark:text-emerald-500 whitespace-nowrap">
+            {{ group.category }}
+          </h2>
+          <div class="w-full h-px bg-stone-300 dark:bg-slate-800 transition-colors duration-500"></div>
+        </div>
 
-        <ul class="flex flex-wrap gap-4">
+        <ul class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
           <SkillsCard
-            v-for="(tech, index) in group.techs"
+            v-for="tech in group.techs"
             :key="tech.name"
             :tech="tech"
-            :color-index="index"
           />
         </ul>
       </section>
