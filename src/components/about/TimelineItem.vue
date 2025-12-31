@@ -24,8 +24,15 @@ const props = defineProps({
       ></div>
     </div>
 
-    <div class="m-5 p-5 ml-8 w-full max-w-138 mr-5 min-h-50 from-stone-300 to-stone-50 dark:bg-slate-900 bg-linear-to-br dark:from-slate-900 dark:to-slate-800
-                border border-stone-300 dark:border-slate-800 rounded-xl">
+    <div class="m-5 p-5 ml-8 w-full max-w-138 mr-5 min-h-50 
+            /* Couleurs Fond */
+            bg-stone-100 dark:bg-slate-800
+            /* Bordures */
+            border border-stone-300 dark:border-slate-700 
+            /* LA TRANSITION */
+            transition-all duration-500 ease-in-out
+            /* Autres styles */
+            rounded-xl shadow-sm hover:shadow-md">
       
       <div class="text-sm font-medium text-emerald-600 dark:text-emerald-500 mb-2">
         {{ date }}

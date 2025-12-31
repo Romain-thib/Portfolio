@@ -15,36 +15,40 @@ import {
 </script>
 
 <template>
-  <section class="py-16  dark:bg-slate-900 mx-5">
-    <h2 class="text-5xl md:text-5xl lg:text-6xl font-bold mb-6 text-zinc-800 dark:text-gray-100 text-center pb-10">
-      {{ $t('project.home') }}
-    </h2>
+  <section class="py-24 bg-stone-200 dark:bg-slate-900 transition-colors duration-500 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6">
+      
+      <div class="mb-16">
+        <h2 class="text-5xl md:text-7xl font-black tracking-tighter text-slate-900 dark:text-white mb-4">
+          {{ $t('project.home') }}<span class="text-emerald-600">.</span>
+        </h2>
+        <div class="w-20 h-2 bg-emerald-600 rounded-full"></div>
+      </div>
 
-    <div class="max-w-7xl mx-auto">
-      <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2
-                  lg:grid-cols-3 xl:grid-cols-3 gap-8 justify-items-center">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         <ProjectCard
           v-for="p in featured"
           :key="p.title"
           :project="p"
+          class="transition-all duration-500"
         />
       </div>
-    </div>
 
-    <div>
-      <button
-            @click="router.push('/projects')"
-            class="mt-15 px-8 py-3 bg-emerald-600 hover:bg-emerald-800
-                   border border-emerald-600 dark:hover:border-emerald-800
-                   hover:border-emerald-800 
-                   text-white dark:hover:bg-emerald-800
-                   font-semibold rounded-lg cursor-pointer
-                   transition transform hover:scale-102
-                   flex items-center gap-2 mx-auto"
-          >
-            {{ $t('home.projects.view_all') }}
-            <ArrowRightIcon class="w-5 h-5" />
-      </button>
+      <div class="mt-20 flex justify-center">
+        <button
+          @click="router.push('/projects')"
+          class="group relative px-10 py-4 bg-slate-900 dark:bg-emerald-600 
+                 text-white font-bold rounded-2xl cursor-pointer
+                 overflow-hidden transition-all duration-300
+                 hover:shadow-2xl hover:shadow-emerald-500/20 hover:-translate-y-1
+                 flex items-center gap-3"
+        >
+          <div class="absolute inset-0 w-full h-full bg-linear-to-r from-transparent via-white/10 to-transparent -translate-x-full"></div>
+          
+          <span class="relative">{{ $t('home.projects.view_all') }}</span>
+          <ArrowRightIcon class="w-5 h-5 relative transition-transform group-hover:translate-x-1" />
+        </button>
+      </div>
     </div>
   </section>
 </template>

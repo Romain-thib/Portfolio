@@ -8,10 +8,16 @@ const timelineItems = ['but', 'lycee']
 </script>
 
 <template>
-  <div class="w-full mt-1 -ml-10">
-    <h2 class="relative z-10 text-5xl font-semibold tracking-tight mb-10 text-slate-900 dark:text-gray-100 text-center">
-      {{ t('timeline.title') }}
-    </h2>
+  <div class="w-full  -ml-10">
+    <div class="mb-15 text-center">
+       <div class="inline-block text-left">
+         <h2 class="text-5xl md:text-7xl font-black tracking-tighter text-slate-900 dark:text-white mb-4">
+          {{ t('timeline.title') }}<span class="text-emerald-600">.</span>
+        </h2>
+        
+        <div class="w-20 h-2 bg-emerald-600 rounded-full"></div>
+      </div>
+    </div>
 
     <div class="relative flex flex-col gap-8 pl-6 ml-[20%]">
       <!-- Ligne verticale de la timeline -->

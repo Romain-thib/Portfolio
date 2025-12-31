@@ -76,10 +76,17 @@ const handleBlur = () => {
 </script>
 
 <template>
-  <div class="max-w-6xl mx-auto mb-8">
+  <div class="max-w-6xl mx-auto mb-12">
     <div class="flex flex-col sm:flex-row gap-4 items-center justify-center">     
-      <div class="relative flex gap-2 items-center">
-        <div class="relative">
+      <div class="relative flex gap-3 items-center w-full max-w-md">
+        
+        <div class="relative w-full group">
+          <span class="absolute left-4 top-1/2 -translate-y-1/2 text-emerald-600 dark:text-emerald-500">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </span>
+
           <input
             id="tech-filter"
             type="text"
@@ -88,46 +95,61 @@ const handleBlur = () => {
             @focus="handleFocus"
             @blur="handleBlur"
             :placeholder="t('project.placeHolder')"
-            class="bg-stone-50 dark:bg-slate-800
-                   border border-emerald-600 dark:border-slate-700
-                   text-zinc-800 dark:text-slate-100
-                   rounded-lg px-4 py-2 min-w-62.5
-                   focus:outline-none focus:ring-1 focus:ring-emerald-600
-                   placeholder:text-zinc-400 dark:placeholder:text-slate-500"
+            class="w-full bg-white dark:bg-slate-800/50 
+                   backdrop-blur-sm
+                   border-2 border-stone-300 dark:border-slate-700
+                   text-slate-900 dark:text-white
+                   rounded-2xl px-12 py-3
+                   transition-all duration-300
+                   focus:outline-none focus:border-emerald-600 focus:ring-4 focus:ring-emerald-600/10
+                   placeholder:text-slate-400 dark:placeholder:text-slate-500"
           />
           
-          <div
-            v-if="showDropdown && filteredTechnologies.length > 0"
-            class="absolute z-10 w-full mt-1
-                   bg-stone-50 dark:bg-slate-800
-                   border border-stone-200 dark:border-slate-700
-                   rounded-lg shadow-lg max-h-60 overflow-y-auto"
+          <transition 
+            enter-active-class="transition duration-200 ease-out"
+            enter-from-class="translate-y-1 opacity-0"
+            enter-to-class="translate-y-0 opacity-100"
+            leave-active-class="transition duration-150 ease-in"
+            leave-from-class="translate-y-0 opacity-100"
+            leave-to-class="translate-y-1 opacity-0"
           >
-            <button
-              v-for="tech in filteredTechnologies"
-              :key="tech"
-              @click="selectTech(tech)"
-              class="w-full text-left px-4 py-2
-                     text-zinc-800 dark:text-slate-100
-                     hover:bg-stone-100 dark:hover:bg-slate-700
-                     transition-colors first:rounded-t-lg last:rounded-b-lg"
+            <div
+              v-if="showDropdown && filteredTechnologies.length > 0"
+              class="absolute z-20 w-full mt-2
+                     bg-white/95 dark:bg-slate-800/95 backdrop-blur-md
+                     border border-stone-200 dark:border-slate-700
+                     rounded-2xl shadow-2xl max-h-60 overflow-y-auto
+                     transition-colors duration-500"
             >
-              {{ tech }}
-            </button>
-          </div>
+              <button
+                v-for="tech in filteredTechnologies"
+                :key="tech"
+                @mousedown.prevent="selectTech(tech)"
+                class="w-full text-left px-5 py-3
+                       text-slate-700 dark:text-slate-200
+                       hover:bg-emerald-50 dark:hover:bg-emerald-900/30
+                       hover:text-emerald-600 dark:hover:text-emerald-400
+                       transition-colors font-medium border-b border-stone-100 dark:border-slate-700/50 last:border-none"
+              >
+                {{ tech }}
+              </button>
+            </div>
+          </transition>
         </div>
 
         <button
           v-if="selectedTech"
           @click="clearFilter"
-          class="bg-red-100 dark:bg-red-900/30
-                 text-red-700 dark:text-red-300
-                 px-3 py-2 rounded-lg
-                 hover:bg-red-200 dark:hover:bg-red-900/50
-                 transition-colors"
+          class="flex-shrink-0 bg-red-50 dark:bg-red-900/20
+                 text-red-500 dark:text-red-400
+                 p-3 rounded-xl
+                 hover:bg-red-500 hover:text-white
+                 transition-all duration-300 shadow-sm"
           title="Effacer le filtre"
         >
-          ✕
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
         </button>
       </div>
     </div>

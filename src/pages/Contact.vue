@@ -19,13 +19,19 @@ const cvLabel = computed(() =>
 </script>
 
 <template>
-  <div class="min-h-screen pt-24 pb-12 flex items-center justify-center bg-stone-200 dark:bg-slate-900 transition-colors duration-500">
+  <div class="min-h-screen pt-15 pb-12 flex items-center justify-center bg-stone-200 dark:bg-slate-900 transition-colors duration-500">
     <div class="max-w-5xl mx-auto px-6 w-full">
       
       <div class="text-center mb-16">
-        <h2 class="text-5xl md:text-6xl font-extrabold tracking-tight mb-6 bg-linear-to-r from-emerald-600 to-teal-500 bg-clip-text text-transparent">
-          {{ $t("contact.title") }}
-        </h2>
+        <div class="mb-10 text-center">
+          <div class="inline-block text-left">
+            <h2 class="text-5xl md:text-7xl font-black tracking-tighter text-slate-900 dark:text-white mb-4">
+              {{ $t("contact.title") }}<span class="text-emerald-600">.</span>
+            </h2>
+            <div class="w-20 h-2 bg-emerald-600 rounded-full"></div>
+          </div>
+        </div>
+        
         <p class="max-w-2xl mx-auto text-slate-600 dark:text-slate-400 text-lg md:text-xl leading-relaxed transition-colors duration-500">
           {{ $t("contact.description") }}
         </p>

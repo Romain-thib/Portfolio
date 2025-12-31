@@ -63,11 +63,14 @@ const keySkills = computed(() => {
       </div>
 
       <div class="relative z-10 text-center px-6 max-w-7xl mx-auto">
-        <h1 class="text-6xl md:text-7xl lg:text-9xl font-bold mb-6
-                   text-zinc-800 dark:text-emerald-600">
-          Romain
-        </h1>
-        
+        <div
+          class="group text-6xl md:text-7xl lg:text-9xl mb-8 font-black tracking-tighter"
+        >
+          <span class="text-slate-900 dark:text-white transition-colors">
+            ROMAIN<span class="text-emerald-600">.</span>
+          </span>
+        </div>
+ 
         <span class="relative text-2xl md:text-4xl lg:text-5xl inline-block 
                     before:absolute before:-inset-3 before:block before:-skew-y-5
                     before:bg-emerald-600 mt-5 mb-13 md:mt-8 before:rounded-xl">
@@ -112,9 +115,18 @@ const keySkills = computed(() => {
 
     <section class="py-20 bg-emerald-600 transition-colors duration-500">
       <div class="max-w-4xl mx-auto px-6 text-center">
-        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white">
-          {{ $t('home.skills.title') }}
-        </h2>
+        <div class="mb-10 text-center">
+          <div class="inline-block text-left">
+            <h2 class="text-5xl md:text-7xl font-black tracking-tighter text-white mb-4">
+              {{ $t("project.title") }}<span class="text-white">.</span>
+            </h2>
+            
+            <div class="w-20 h-2 bg-white rounded-full"></div>
+          </div>
+        </div>
+
+        
+        
         
         <p class="text-lg md:text-xl mb-8 text-emerald-50">
           {{ $t('home.skills.subtitle') }}
