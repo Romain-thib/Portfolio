@@ -19,7 +19,7 @@
     "titleKey": "projects.bomberman.title",
     "descriptionKey": "projects.bomberman.description",
     "tech": ["JAVA", "JavaFX"],
-    "image": "/images/projet_bomberman.png",
+    "image": "/images/bomberman.png",
     "lien" : "https://github.com/Romain-thib/Bomberman.git"
   },
   {
