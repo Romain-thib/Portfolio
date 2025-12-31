@@ -66,7 +66,11 @@ const cvLabel = computed(() =>
           download
           class="group flex flex-col items-center justify-center p-8 rounded-3xl border-2 border-slate-300 dark:border-slate-700 hover:border-emerald-500 dark:hover:border-emerald-500 transition-all hover:bg-emerald-50/50 dark:hover:bg-emerald-900/10"
         >
-          <div class="w-16 h-16 mb-4 flex items-center justify-center rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-500">
+          <div class="w-16 h-16 mb-4 flex items-center justify-center rounded-full 
+            text-slate-600 dark:text-slate-400  
+            group-hover:text-emerald-600 
+            dark:group-hover:text-emerald-500 
+            transition-all duration-500">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
             </svg>
