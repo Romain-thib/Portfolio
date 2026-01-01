@@ -3,13 +3,16 @@ import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 
 const { locale } = useI18n()
+const baseUrl = import.meta.env.BASE_URL
 
 const email = "romainthibaut20@gmail.com"
 const githubUrl = "https://github.com/Romain-thib"
 const linkedinUrl = "http://www.linkedin.com/in/romain-thibaut"
 
 const cvUrl = computed(() => 
-    locale.value === 'fr' ? '/cv/CV_Romain_THIBAUT_FR.pdf' : '/cv/CV_Romain_THIBAUT_EN.pdf'
+    locale.value === 'fr' 
+      ? `${baseUrl}cv/CV_Romain_THIBAUT_FR.pdf`
+      : `${baseUrl}cv/CV_Romain_THIBAUT_EN.pdf`
 )
 
 const cvLabel = computed(() => 
