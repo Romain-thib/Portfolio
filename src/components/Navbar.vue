@@ -43,6 +43,7 @@ function navigateAndClose(path) {
         </span>
       </div>
 
+      <!-- Menu Desktop -->
       <div class="hidden md:flex items-center gap-8">
         <div class="hidden md:flex items-center gap-8 text-sm font-bold uppercase tracking-widest text-slate-900 dark:text-slate-300 
                  hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors"
@@ -102,13 +103,68 @@ function navigateAndClose(path) {
         </div>
       </div>
 
+      <!-- Bouton hamburger mobile -->
       <button @click="toggleMenu" class="md:hidden p-2 text-slate-900 dark:text-white">
         <Bars3Icon v-if="!isMenuOpen" class="w-7 h-7" />
         <XMarkIcon v-else class="w-7 h-7" />
       </button>
     </div>
 
-    <div v-if="isMenuOpen" class="md:hidden absolute top-full left-0 w-full bg-stone-200 dark:bg-slate-900 border-b border-stone-300 dark:border-slate-800 p-6 flex flex-col gap-4 shadow-xl">
-       </div>
+    <!-- Menu Mobile -->
+    <div 
+      v-if="isMenuOpen" 
+      class="md:hidden absolute top-full left-0 w-full bg-stone-200 dark:bg-slate-900 border-b border-stone-300 dark:border-slate-800 p-6 flex flex-col gap-4 shadow-xl"
+    >
+      <button
+        @click="navigateAndClose('/')"
+        class="text-left text-lg font-bold text-slate-900 dark:text-slate-200 hover:text-emerald-600 dark:hover:text-emerald-400 transition py-2"
+      >
+        {{ $t('ui.home') }}
+      </button>
+
+      <button
+        @click="navigateAndClose('/projects')"
+        class="text-left text-lg font-bold text-slate-900 dark:text-slate-200 hover:text-emerald-600 dark:hover:text-emerald-400 transition py-2"
+      >
+        {{ $t('ui.projects') }}
+      </button>
+
+      <button
+        @click="navigateAndClose('/skills')"
+        class="text-left text-lg font-bold text-slate-900 dark:text-slate-200 hover:text-emerald-600 dark:hover:text-emerald-400 transition py-2"
+      >
+        {{ $t('ui.skills') }}
+      </button>
+
+      <button
+        @click="navigateAndClose('/about')"
+        class="text-left text-lg font-bold text-slate-900 dark:text-slate-200 hover:text-emerald-600 dark:hover:text-emerald-400 transition py-2"
+      >
+        {{ $t('ui.about') }}
+      </button>
+
+      <button
+        @click="navigateAndClose('/contact')"
+        class="text-left text-lg font-bold text-slate-900 dark:text-slate-200 hover:text-emerald-600 dark:hover:text-emerald-400 transition py-2"
+      >
+        {{ $t('ui.contact') }}
+      </button>
+
+      <div class="h-px bg-stone-300 dark:bg-slate-700 my-2"></div>
+
+      <div class="flex items-center gap-4">
+        <button @click="toggleLang" class="flex items-center gap-2 py-2">
+          <img :src="locale === 'fr' ? frFlag : enFlag" class="w-6 h-4 object-cover rounded-sm shadow-sm" />
+          <span class="text-sm font-bold text-slate-900 dark:text-slate-200">
+            {{ locale === 'fr' ? 'Français' : 'English' }}
+          </span>
+        </button>
+
+        <button @click="ui.toggleTheme" class="p-2 rounded-xl hover:bg-stone-300 dark:hover:bg-slate-800 transition-colors">
+          <SunIcon v-if="ui.isDark" class="w-6 h-6 text-amber-400" />
+          <MoonIcon v-else class="w-6 h-6 text-slate-600" />
+        </button>
+      </div>
+    </div>
   </nav>
 </template>
