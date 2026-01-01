@@ -47,9 +47,14 @@ const groupedSkills = computed(() =>
         class="mb-12 sm:mb-16 last:mb-0"
       >
         <div class="flex items-center gap-4 mb-6 sm:mb-8">
-          <h2 class="text-base sm:text-xl font-bold uppercase tracking-[0.2em] text-slate-800 dark:text-emerald-500 whitespace-nowrap">
+          <h2
+            class="text-base sm:text-lg md:text-2xl lg:text-3xl
+                  font-bold uppercase tracking-[0.2em]
+                  text-slate-800 dark:text-emerald-500 break-words"
+          >
             {{ group.categoryLabel }}
           </h2>
+
           <div class="w-full h-px bg-stone-300 dark:bg-slate-800 transition-colors duration-500"></div>
         </div>
 
