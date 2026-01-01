@@ -30,7 +30,7 @@ const groupedSkills = computed(() =>
 
 <template>
   <div class="min-h-screen pt-15 pb-1 my-20 bg-stone-200 dark:bg-slate-900 transition-colors duration-500">
-    <div class="max-w-6xl mx-auto px-6">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
       
       <div class="mb-10 text-center">
        <div class="inline-block text-left">
@@ -44,16 +44,16 @@ const groupedSkills = computed(() =>
       <section
         v-for="group in groupedSkills"
         :key="group.categoryKey"
-        class="mb-16 last:mb-0"
+        class="mb-12 sm:mb-16 last:mb-0"
       >
-        <div class="flex items-center gap-4 mb-8">
-          <h2 class="text-xl font-bold uppercase tracking-[0.2em] text-slate-800 dark:text-emerald-500 whitespace-nowrap">
+        <div class="flex items-center gap-4 mb-6 sm:mb-8">
+          <h2 class="text-base sm:text-xl font-bold uppercase tracking-[0.2em] text-slate-800 dark:text-emerald-500 whitespace-nowrap">
             {{ group.categoryLabel }}
           </h2>
           <div class="w-full h-px bg-stone-300 dark:bg-slate-800 transition-colors duration-500"></div>
         </div>
 
-        <ul class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+        <ul class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-4 md:gap-6">
           <SkillsCard
             v-for="tech in group.techs"
             :key="tech.name"
