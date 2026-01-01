@@ -3,6 +3,7 @@ import { useI18n } from 'vue-i18n'
 import TechBadge from './TechBadge.vue'
 
 const { t } = useI18n()
+const baseUrl = import.meta.env.BASE_URL
 
 defineProps({
   project: {
@@ -21,7 +22,7 @@ defineProps({
   >
     <div class="relative h-52 overflow-hidden">
       <img
-        :src="project.image"
+        :src="`${baseUrl}${project.image}`"
         :alt="t(project.titleKey)"
         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
       />
