@@ -37,16 +37,16 @@ import {
       <div class="mt-20 flex justify-center">
         <button
           @click="router.push('/projects')"
-          class="group relative px-10 py-4 bg-slate-900 dark:bg-emerald-600 
+          class="group relative px-10 py-4 bg-emerald-600 hover:bg-emerald-800 
                  text-white font-bold rounded-2xl cursor-pointer
                  overflow-hidden transition-all duration-300
-                 hover:shadow-2xl hover:shadow-emerald-500/20 hover:-translate-y-1
-                 flex items-center gap-3"
+                 hover:shadow-2xl hover:shadow-emerald-500/20
+                 flex items-center gap-3 transform hover:scale-102"
         >
           <div class="absolute inset-0 w-full h-full bg-linear-to-r from-transparent via-white/10 to-transparent -translate-x-full"></div>
           
           <span class="relative">{{ $t('home.projects.view_all') }}</span>
-          <ArrowRightIcon class="w-5 h-5 relative transition-transform group-hover:translate-x-1" />
+          <ArrowRightIcon class="w-5 h-5 relative transition-transform" />
         </button>
       </div>
     </div>
