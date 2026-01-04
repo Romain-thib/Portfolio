@@ -1,5 +1,5 @@
-# Vue 3 + Vite
+# Mon Portfolio
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+(Accéder au site)[https://romain-thib.github.io/Portfolio/]
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+Vous y trouverez mes réseaux sociaux, mes compétences ainsi que les projets que j’ai réalisés.
