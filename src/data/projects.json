@@ -12,7 +12,15 @@
     "descriptionKey": "projects.osolsound.description",
     "tech": ["HTML", "CSS", "PHP"],
     "image": "/images/osolsound.png",
-    "lien": ""
+    "lien": "https://github.com/Romain-thib/O-Sol-Sound.git"
+  },
+  {
+    "id": "pacman",
+    "titleKey": "projects.pacman.title",
+    "descriptionKey": "projects.pacman.description",
+    "tech": ["JAVA", "JavaFX"],
+    "image": "/images/pacman.png",
+    "lien": "https://github.com/Romain-thib/Pac-Man.git"
   },
   {
     "id": "bomberman",
@@ -54,14 +62,6 @@
     "tech": ["JAVA", "JavaFX"],
     "image": "/images/lights-off.png",
     "lien": "https://github.com/Romain-thib/Lights-Off.git"
-  },
-  {
-    "id": "pacman",
-    "titleKey": "projects.pacman.title",
-    "descriptionKey": "projects.pacman.description",
-    "tech": ["JAVA", "JavaFX"],
-    "image": "/images/pacman.png",
-    "lien": ""
   },
   {
     "id": "cinehub",

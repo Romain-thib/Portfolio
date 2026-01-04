@@ -26,7 +26,7 @@
     },
     "pacman": {
       "title": "Pac-Man",
-      "description": "Ce travail de groupe (4 personnes) consistait à concevoir une adaptation du jeu Pac‑Man en JavaFX. L’objectif était d’introduire et d’expérimenter les patrons de conception."
+      "description": "Ce travail de groupe (4 personnes) consistait à concevoir une adaptation du jeu Pac‑Man en JavaFX. Le projet avait pour objectif de mettre en pratique les patrons de conception tout en produisant un jeu fonctionnel, lisible et évolutif, avec une architecture pensée pour être facilement maintenable."
     },
     "cinehub": {
       "title": "CineHub",

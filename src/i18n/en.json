@@ -26,7 +26,7 @@
     },
     "pacman": {
       "title": "Pac-Man",
-      "description": "This group project (4 people) involved designing an adaptation of the Pac-Man game in JavaFX. The goal was to introduce and experiment with design patterns."
+      "description": "This group project (4 people) involved adapting the Pac-Man game in JavaFX. The goal was to apply design patterns while creating a functional, readable, and evolutive game with an architecture designed for easy maintenance."
     },
     "cinehub": {
       "title": "CineHub",
