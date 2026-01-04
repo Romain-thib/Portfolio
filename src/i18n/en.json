@@ -28,6 +28,10 @@
       "title": "Pac-Man",
       "description": "This group project (4 people) involved adapting the Pac-Man game in JavaFX. The goal was to apply design patterns while creating a functional, readable, and evolutive game with an architecture designed for easy maintenance."
     },
+    "soul-mates": {
+      "title": "Soul-Mates",
+      "description": "This project was completed by a team of four people. The goal was to design a website that could be played by multiple users. It includes a ranking system and uses a dedicated cocktail API. Users can search for cocktails based on their ingredients, or conversely, discover the ingredients contained in a cocktail. Warning: Alcohol should be consumed in moderation."
+    },
     "cinehub": {
       "title": "CineHub",
       "description": "Developed by four people, CineHub is our first website built with Laravel. We integrated a CRUD and a comment system, for example. This site allowed us to familiarise ourselves with Laravel."

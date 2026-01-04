@@ -3,7 +3,7 @@
     "titleKey": "projects.lens-symphony-web.title",
     "descriptionKey": "projects.lens-symphony-web.description",
     "tech": ["PHP", "HTML", "LARAVEL", "TAILWIND CSS"],
-    "image": "/images/lens_symphony.png",
+    "image": "images/lens_symphony.png",
     "lien" : ""
   },
   {
@@ -11,7 +11,7 @@
     "titleKey": "projects.osolsound.title",
     "descriptionKey": "projects.osolsound.description",
     "tech": ["HTML", "CSS", "PHP"],
-    "image": "/images/osolsound.png",
+    "image": "images/osolsound.png",
     "lien": "https://github.com/Romain-thib/O-Sol-Sound.git"
   },
   {
@@ -19,15 +19,23 @@
     "titleKey": "projects.pacman.title",
     "descriptionKey": "projects.pacman.description",
     "tech": ["JAVA", "JavaFX"],
-    "image": "/images/pacman.png",
+    "image": "images/pacman.png",
     "lien": "https://github.com/Romain-thib/Pac-Man.git"
+  },
+  {
+    "id": "soul-mates",
+    "titleKey": "projects.soul-mates.title",
+    "descriptionKey": "projects.soul-mates.description",
+    "tech": ["FLASK", "HTML", "CSS", "TAILWIND CSS"],
+    "image": "images/soul-mates.png", 
+    "lien": "https://github.com/Romain-thib/Soul-Mates.git"
   },
   {
     "id": "bomberman",
     "titleKey": "projects.bomberman.title",
     "descriptionKey": "projects.bomberman.description",
     "tech": ["JAVA", "JavaFX"],
-    "image": "/images/bomberman.png",
+    "image": "images/bomberman.png",
     "lien" : "https://github.com/Romain-thib/Bomberman.git"
   },
   {
@@ -35,8 +43,7 @@
     "titleKey": "projects.artPourVivre.title",
     "descriptionKey": "projects.artPourVivre.description",
     "tech": ["HTML", "CSS"],
-    "image": "/images/site-art-pour-vivre.png"
-    ,
+    "image": "images/site-art-pour-vivre.png",
     "lien" : "https://github.com/Romain-thib/Art-pour-vivre.git"
   },
   {
@@ -44,7 +51,7 @@
     "titleKey": "projects.l-o-rhone.title",
     "descriptionKey": "projects.l-o-rhone.description",
     "tech": ["JAVA", "JavaFX"],
-    "image": "/images/projet_eau_sae.png",
+    "image": "images/projet_eau_sae.png",
     "lien" : "https://github.com/Romain-thib/L-O-Rhone.git"
   },
   {
@@ -52,7 +59,7 @@
     "titleKey": "projects.2048.title",
     "descriptionKey": "projects.2048.description",
     "tech": ["JAVA", "JavaFX"],
-    "image": "/images/2048.png",
+    "image": "images/2048.png",
     "lien": "https://github.com/Romain-thib/2048.git"
   },
   {
@@ -60,7 +67,7 @@
     "titleKey": "projects.lightsoff.title",
     "descriptionKey": "projects.lightsoff.description",
     "tech": ["JAVA", "JavaFX"],
-    "image": "/images/lights-off.png",
+    "image": "images/lights-off.png",
     "lien": "https://github.com/Romain-thib/Lights-Off.git"
   },
   {
@@ -68,7 +75,7 @@
     "titleKey": "projects.cinehub.title",
     "descriptionKey": "projects.cinehub.description",
     "tech": ["HTML", "TAILWIND CSS", "PHP"],
-    "image": "/images/cinehub.png",
+    "image": "images/cinehub.png",
     "lien": ""
   }
 ]
