@@ -15,7 +15,8 @@ const categoriesOrder = [
   'data',
   'tools',
   'git',
-  'ide'
+  'ide',
+  'langue'
 ]
 
 // Regrouper les skills par catégorie
